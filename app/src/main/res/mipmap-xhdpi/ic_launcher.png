@@ -1,0 +1,175 @@
+package com.example.tetris2;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.util.AttributeSet;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Game extends SurfaceView implements SurfaceHolder.Callback {
+    public Tetris thread;
+    private Board tetrisboard;
+    private SquareShape square;
+    private TShape tshape;
+    private IShape ishape;
+    int xcoord=0,ycoord=0;
+    ArrayList<Shape> shapelist=new ArrayList<Shape>();
+
+    Bitmap nextshape;
+    Paint paint=new Paint();
+    int rotate=1;
+
+    public Game(Context context) {
+
+        super(context);
+        getHolder().addCallback(this);
+        thread = new Tetris(this);
+
+
+
+        tetrisboard=new Board(10,13);
+
+
+        ishape=new IShape(tetrisboard);
+        //tshape=new TShape(tetrisboard);
+
+        square=new SquareShape(tetrisboard);
+        shapelist.add(square);
+
+        setFocusable(true);
+
+        nextshape= BitmapFactory.decodeResource(getResources(),R.drawable.squarepic);
+
+
+            }
+
+    public Game(Context context, AttributeSet attrs) {
+
+        super(context,attrs);
+        getHolder().addCallback(this);
+        thread = new Tetris(this);
+
+
+        tetrisboard=new Board(10,13);
+
+        ishape=new IShape(tetrisboard);
+        //tshape=new TShape(tetrisboard);
+
+        square=new SquareShape(tetrisboard);
+        shapelist.add(square);
+
+        setFocusable(true);
+
+        nextshape= BitmapFactory.decodeResource(getResources(),R.drawable.squarepic);
+
+
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+        thread = new Tetris( this);
+        thread.setRunning(true);
+        thread.start();
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+
+        thread.interrupt();
+      /*  boolean retry = true;
+        while (retry) {
+            try {
+                thread.setRunning(false);
+                thread.join();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            retry=false;
+        }*/
+
+
+    }
+
+
+   /* @Override
+    public boolean onTouchEvent(MotionEvent event) {
+      //  return super.onTouchEvent(event);
+        switch(event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+            case MotionEvent.ACTION_MOVE:
+                x=(int)(event.getX());
+                y=(int)(event.getY());
+                //playerpoint.set((int)event.getX(),(int)event.getY());
+                System.out.println("MOVEEE");
+                System.out.println("x"+x);
+                System.out.println("y"+y);
+
+               break;
+        }
+
+        return true;
+    }*/
+
+    public void update(){
+
+
+        if(shapelist.get(number).clear==0){
+       shapelist.get(number).update(xcoord,ycoord,rotate);}
+     // if(shapelist.get(number).clear==1){
+       //shapelist.get(number+1).update(xcoord,ycoord,rotate);}
+
+
+    }
+
+    public int BottomCheck(){
+
+        int check=0;
+        int checkcount=0;
+        int j=0;
+
+            for(int i = 0; i<10; i++) {
+
+                //square.set(left,top,right,bottom);
+                if(tetrisboard.boolarr[i][j]==true){
+                    checkcount++;
+
+                }
+
+            }
+
+        return check;
+    }
+
+    public Shape Random(Canvas canvas) {
+        int randomnum;
+        String NextPiece=new String();
+        Random random = new Random();
+        Shape piece=null;
+        randomnum = random.nextInt(6);
+        if (randomnum == 0) {
+
+            NextPiece = "SQUARE";
+            nextshape= BitmapFactory.decodeResource(getResources(),R.drawable.squarepic);
+            SquareShape square=new SquareShape(tetrisboard);
+            piece=square;
+           // return square;
+            //square.draw(canvas);
+
+        } else if (randomnum == 1) {
+            NextPiece = "ISHAPE";
+            nextshape= BitmapFactory.decodeResource(getResources(),R.drawable.ishapepic);
+            IShape ishape=new IShape(tetrisboard);
+            piece=ishape;
+            //return ishape

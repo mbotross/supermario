@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat May 25 12:33:36 PDT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.path=classes.dex
+0.set=DEX
+count=1
