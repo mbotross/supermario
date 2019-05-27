@@ -731,13 +731,10 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
-id imageView8
 id info
 id invisible
 id italic
 id left
-id left_button
 id line1
 id line3
 id listMode
@@ -759,7 +756,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id right
-id right_button
 id right_icon
 id right_side
 id screen
@@ -800,7 +796,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom

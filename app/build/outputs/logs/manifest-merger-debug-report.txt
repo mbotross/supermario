@@ -1,147 +1,147 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a6cc37eac4e164f5ed6e309069ea54c2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a9f09ba8905218fff979f7b3ca90fd6f\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\62a935f405273ff7b77a44a4896deb3a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\baae91d66b02c710c422b83245ec90bd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\24fb15a9d60cb188dc168bb57e644b10\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\8f8d9ec45629046e57146881357ad60a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa415dcb83f0b639d83e9af56a3b3018\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\2ee24a9f2d3fdc5aa2d8487cd420d129\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\876aa85ab7441ae858bf36bf7a39e1e2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\3885a590196a88bb429ce0536deaf058\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\507385e006aa130f718ceae35d52fba8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\63599046abed978e4bc92cafb8d597b9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa259c0dbe2b3884f3beaabebe90aea5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0aafd1daa6085ae51ffb26d279b54ba8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a314317a81ad3183143c90f1ce4ae08e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\b8bb8ab6049734a9fac4de90bcfa3525\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\88a19f1e2a79e9d82ec57a0d38b0a0ea\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\91814dd1e189b2b0f97624cb91b021ce\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\d717ce1fef15d15ab2d7ca422c627bcc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\bb08e2c8e11b52cc672a1cb229ed0bd9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0c0efac8153bf4dbdc71b6d91e41d35b\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\026e432c00d559335ed9a385360afb35\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\25ceda96926130b6fc48a770b219e46f\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\f3f490f558d10bba26aca6e6f795a213\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\ec38cabe3039c9458006df72dd4074dc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\5dc265d91e5b826512cc3a84e5b8dda8\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c7a011f4cd0efe02b27632545e557968\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8181f12d36f2b730952da9a71df6422b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\355fb3fd0fb0a5b26edafbab2951236a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\bdb9f9acf24fa21b5c5822950129a7cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\981597f780e665e6a5331a79f87d4529\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e16aedf4ad51a2fdaaa68cd8c0269593\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8582d465538ead88ef472ee1c06bb1c8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f59c3ed4920f7db64e10c72e84f1a55f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3ebd0ea2345c40d7bd9ab11cae01295b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\5b035fd6d8589254ed41e10aa509f9c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\8f49f0717ba29df35a1fe18874c1d210\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3f576e34538e25694c5bd23aebb313a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\85fe74b7c5ce3c5fc623423880af4f6d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f19ffd607db5c29d3785439e6236186c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\61de04c69918af39656ef072899035e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5cc3bbdd08c4974ce701e25bfbac33fd\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d4021b1e91be1fcff699d82040667529\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\355658c01f70a31914517ad7633c1141\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\92c68bff5c04034762fc4d52c6b5d247\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\be6c36551ac03e269784593b93797292\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\02f1b307311baeff573c095106142e60\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\31de7b07c1888b58bdcfca857064a130\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fa13be220f753632f3089f22a4070f23\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\90203cd4ecaa1719f34132c5bdce02a5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3750bb4afd51b2751e68afc990d0ac1c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\52962e58375ba55eb465557163612df7\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:3:5-38
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:4:5-38
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:5:5-19:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a9f09ba8905218fff979f7b3ca90fd6f\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a9f09ba8905218fff979f7b3ca90fd6f\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\b8bb8ab6049734a9fac4de90bcfa3525\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\b8bb8ab6049734a9fac4de90bcfa3525\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:7:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8181f12d36f2b730952da9a71df6422b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8181f12d36f2b730952da9a71df6422b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5cc3bbdd08c4974ce701e25bfbac33fd\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5cc3bbdd08c4974ce701e25bfbac33fd\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.supermario2.MainActivity
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:15:9-22:20
 	android:name
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a6cc37eac4e164f5ed6e309069ea54c2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a6cc37eac4e164f5ed6e309069ea54c2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a9f09ba8905218fff979f7b3ca90fd6f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a9f09ba8905218fff979f7b3ca90fd6f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\62a935f405273ff7b77a44a4896deb3a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\62a935f405273ff7b77a44a4896deb3a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\baae91d66b02c710c422b83245ec90bd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\baae91d66b02c710c422b83245ec90bd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\24fb15a9d60cb188dc168bb57e644b10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\24fb15a9d60cb188dc168bb57e644b10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\8f8d9ec45629046e57146881357ad60a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\8f8d9ec45629046e57146881357ad60a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa415dcb83f0b639d83e9af56a3b3018\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa415dcb83f0b639d83e9af56a3b3018\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\2ee24a9f2d3fdc5aa2d8487cd420d129\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\2ee24a9f2d3fdc5aa2d8487cd420d129\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\876aa85ab7441ae858bf36bf7a39e1e2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\876aa85ab7441ae858bf36bf7a39e1e2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\3885a590196a88bb429ce0536deaf058\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\3885a590196a88bb429ce0536deaf058\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\507385e006aa130f718ceae35d52fba8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\507385e006aa130f718ceae35d52fba8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\63599046abed978e4bc92cafb8d597b9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\63599046abed978e4bc92cafb8d597b9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa259c0dbe2b3884f3beaabebe90aea5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\fa259c0dbe2b3884f3beaabebe90aea5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0aafd1daa6085ae51ffb26d279b54ba8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0aafd1daa6085ae51ffb26d279b54ba8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a314317a81ad3183143c90f1ce4ae08e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\a314317a81ad3183143c90f1ce4ae08e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\99cd15b9be94e47d3f6a5c85c54dac4d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\b8bb8ab6049734a9fac4de90bcfa3525\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\b8bb8ab6049734a9fac4de90bcfa3525\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\88a19f1e2a79e9d82ec57a0d38b0a0ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\88a19f1e2a79e9d82ec57a0d38b0a0ea\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\91814dd1e189b2b0f97624cb91b021ce\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\91814dd1e189b2b0f97624cb91b021ce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\d717ce1fef15d15ab2d7ca422c627bcc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\d717ce1fef15d15ab2d7ca422c627bcc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\bb08e2c8e11b52cc672a1cb229ed0bd9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\bb08e2c8e11b52cc672a1cb229ed0bd9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0c0efac8153bf4dbdc71b6d91e41d35b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\0c0efac8153bf4dbdc71b6d91e41d35b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\026e432c00d559335ed9a385360afb35\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\026e432c00d559335ed9a385360afb35\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\25ceda96926130b6fc48a770b219e46f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\25ceda96926130b6fc48a770b219e46f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\f3f490f558d10bba26aca6e6f795a213\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\f3f490f558d10bba26aca6e6f795a213\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\ec38cabe3039c9458006df72dd4074dc\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\ec38cabe3039c9458006df72dd4074dc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\5dc265d91e5b826512cc3a84e5b8dda8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-2\files-2.1\5dc265d91e5b826512cc3a84e5b8dda8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c7a011f4cd0efe02b27632545e557968\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c7a011f4cd0efe02b27632545e557968\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8181f12d36f2b730952da9a71df6422b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8181f12d36f2b730952da9a71df6422b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\355fb3fd0fb0a5b26edafbab2951236a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\355fb3fd0fb0a5b26edafbab2951236a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\bdb9f9acf24fa21b5c5822950129a7cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\bdb9f9acf24fa21b5c5822950129a7cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\981597f780e665e6a5331a79f87d4529\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\981597f780e665e6a5331a79f87d4529\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e16aedf4ad51a2fdaaa68cd8c0269593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e16aedf4ad51a2fdaaa68cd8c0269593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8582d465538ead88ef472ee1c06bb1c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8582d465538ead88ef472ee1c06bb1c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f59c3ed4920f7db64e10c72e84f1a55f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f59c3ed4920f7db64e10c72e84f1a55f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3ebd0ea2345c40d7bd9ab11cae01295b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3ebd0ea2345c40d7bd9ab11cae01295b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\5b035fd6d8589254ed41e10aa509f9c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\5b035fd6d8589254ed41e10aa509f9c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\8f49f0717ba29df35a1fe18874c1d210\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\8f49f0717ba29df35a1fe18874c1d210\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3f576e34538e25694c5bd23aebb313a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3f576e34538e25694c5bd23aebb313a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\85fe74b7c5ce3c5fc623423880af4f6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\85fe74b7c5ce3c5fc623423880af4f6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f19ffd607db5c29d3785439e6236186c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f19ffd607db5c29d3785439e6236186c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\61de04c69918af39656ef072899035e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\61de04c69918af39656ef072899035e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\125754db1065a6b1c3548dac3a8d206a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5cc3bbdd08c4974ce701e25bfbac33fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5cc3bbdd08c4974ce701e25bfbac33fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d4021b1e91be1fcff699d82040667529\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d4021b1e91be1fcff699d82040667529\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\355658c01f70a31914517ad7633c1141\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\355658c01f70a31914517ad7633c1141\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\92c68bff5c04034762fc4d52c6b5d247\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\92c68bff5c04034762fc4d52c6b5d247\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\be6c36551ac03e269784593b93797292\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\be6c36551ac03e269784593b93797292\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\02f1b307311baeff573c095106142e60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\02f1b307311baeff573c095106142e60\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\31de7b07c1888b58bdcfca857064a130\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\31de7b07c1888b58bdcfca857064a130\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fa13be220f753632f3089f22a4070f23\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fa13be220f753632f3089f22a4070f23\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\90203cd4ecaa1719f34132c5bdce02a5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\90203cd4ecaa1719f34132c5bdce02a5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3750bb4afd51b2751e68afc990d0ac1c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3750bb4afd51b2751e68afc990d0ac1c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\52962e58375ba55eb465557163612df7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\maria\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\52962e58375ba55eb465557163612df7\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\maria\AndroidStudioProjects\SuperMario2\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion

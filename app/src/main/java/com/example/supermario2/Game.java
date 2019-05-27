@@ -90,9 +90,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
 
     public void update(){
-        mario.move();
-
-
+        //mario.collide;
+        mario.moveright();
 
 
     }
@@ -150,7 +149,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         switch(event.getAction()){
             case MotionEvent.ACTION_UP:
                 System.out.println("MOVE up");
-                mario.update(0,60);
+                mario.velocity=-100;
+                //mario.update(0,60);
 
                 break;
 

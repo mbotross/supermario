@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:versionedparcelable:28.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8bb8ab6049734a9fac4de90bcfa3525/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8bb8ab6049734a9fac4de90bcfa3525/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5cc3bbdd08c4974ce701e25bfbac33fd/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5cc3bbdd08c4974ce701e25bfbac33fd/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

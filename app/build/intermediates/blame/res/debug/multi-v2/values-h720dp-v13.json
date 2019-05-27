@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-2\\files-2.1\\a6cc37eac4e164f5ed6e309069ea54c2\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

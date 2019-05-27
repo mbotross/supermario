@@ -12,9 +12,13 @@ public class Obstacles {
     Bitmap temp;
     public int var1=24;
     public int var2=32;
-    Bitmap [][]level1=new Bitmap[32][8];
-    Bitmap [][]level2=new Bitmap[32][8];
-    Bitmap [][]level3=new Bitmap[32][8];
+    public int[][] level1=new int [16][8];
+    public int[][] level2=new int [16][8];
+    public int[][] level3=new int [16][8];
+
+    //Bitmap [][]level1=new Bitmap[32][8];
+    //Bitmap [][]level2=new Bitmap[32][8];
+    //Bitmap [][]level3=new Bitmap[32][8];
 
     public  Obstacles(Context context, Game game){
         this.game=game;
@@ -24,19 +28,11 @@ public class Obstacles {
     }
 
 
+
+
+
     public void initlevel1(){
-        for(int i=0;i<32;i++){
-            for(int j=0;j<8;j++){
-                level1[i][j]=temp;
 
-
-            }
-        }
-
-        level1[5][4]=BitmapFactory.decodeResource(context.getResources(),R.drawable.block);
-        level1[6][4]=BitmapFactory.decodeResource(context.getResources(),R.drawable.block);
-        level1[7][4]=BitmapFactory.decodeResource(context.getResources(),R.drawable.block);
-        level1[8][4]=BitmapFactory.decodeResource(context.getResources(),R.drawable.block);
 
 
     }
