@@ -4,8 +4,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -18,10 +18,17 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Bitmap wallpaper;
     Obstacles obstacles;
     Blocks blocks;
+    Canvas canvas;
+    Goomba goomba;
+    Mushroom mushroom;
+    Rect floor;
+    int GameState=1;
+    int Points=0;
 
     Paint paint=new Paint();
     int rotate=1;
     int WIDTH;
+    int HEIGHT;
 
     public Game(Context context) {
 
@@ -32,7 +39,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         blocks=new Blocks(context,this);
         wallpaper= BitmapFactory.decodeResource(getResources(),R.drawable.mariobackground);
         this.obstacles=new Obstacles(context,this);
+        this.goomba=new Goomba(context,this,mario);
+        this.mushroom=new Mushroom(context,this,mario);
 
+        mario.state=1;
+        mario.type=1;
 
 
         setFocusable(true);
@@ -45,13 +56,16 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     public Game(Context context, AttributeSet attrs) {
 
         super(context,attrs);
-        getHolder().addCallback(this);
         thread = new GameThread(this);
         mario=new Mario(context,this);
-        obstacles=new Obstacles(context,this);
+        blocks=new Blocks(context,this);
+        wallpaper= BitmapFactory.decodeResource(getResources(),R.drawable.mariobackground);
+        this.obstacles=new Obstacles(context,this);
+        this.goomba=new Goomba(context,this,mario);
+        this.mushroom=new Mushroom(context,this,mario);
 
-
-
+        mario.state=1;
+        mario.type=1;
 
 
         setFocusable(true);
@@ -62,6 +76,10 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     }
 
 
+
+    public void shiftRight(){
+
+    }
 
 
 
@@ -97,6 +115,29 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     }
 
 
+    public Boolean collision(){
+//
+        System.out.println("collision");
+  if(mario.rectangle.intersect(blocks.rectangle)){
+
+      return false;
+  }
+  else if(mario.rectangle.intersect(goomba.rectangle)){
+      System.out.println("GOOMBAAAA");
+      goomba.changeMario();
+      return false;
+  }
+
+  else if(mario.rectangle.intersect(mushroom.rectangle)){
+      mushroom.changeMario();
+      return false;
+  }
+
+      return true;
+
+
+    }
+
 
 
 
@@ -106,31 +147,25 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
     @Override
     public void draw(Canvas canvas){
-
+        Boolean check;
         super.draw(canvas);
+        this.canvas=canvas;
         WIDTH=canvas.getWidth();
+        HEIGHT=canvas.getHeight();
+
         Bitmap bit;
         System.out.println("WIDTH:"+canvas.getWidth());
         System.out.println("HEIGHT"+canvas.getHeight());
 
 
-        Paint textpaint=new Paint();
 
-        textpaint.setTextSize(50);
-        textpaint.setColor(Color.RED);
-        textpaint.setStyle(Paint.Style.FILL_AND_STROKE);
-       // bit=Bitmap.createBitmap(background,0,0,1000,1000);
         canvas.drawBitmap(wallpaper,1,1,null);
 
-   /*     obstacles.draw(canvas);
-        System.out.println("WHYYYY");
-        if(obstacles.var1>0){
-        obstacles.var1--;}
-        if(obstacles.var2>0){
-        obstacles.var2--;}
-        //System.out.println("VAR!"+obstacles.var1);*/
         mario.draw(canvas);
         blocks.draw1(canvas);
+        goomba.draw(canvas);
+        mushroom.draw(canvas);
+        check=collision();
 
 
 
@@ -149,7 +184,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         switch(event.getAction()){
             case MotionEvent.ACTION_UP:
                 System.out.println("MOVE up");
-                mario.velocity=-100;
+                System.out.println(HEIGHT);
+               //if(mario.marioheight<>HEIGHT-mario.mario.getHeight())//-mario.marioheight)
+                if(mario.marioheight>=70 && collision()==true){
+                    mario.state=3;
+                mario.velocity=-70;}
                 //mario.update(0,60);
 
                 break;

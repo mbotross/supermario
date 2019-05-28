@@ -16,13 +16,16 @@ public class Mario {
     public int marioheight=800;
     Bitmap mario;
     Bitmap[] marioright=new Bitmap[4];
+    Bitmap[] superright=new Bitmap[4];
     BitmapFactory bit;
     Paint paint=new Paint();
     int MOVE=300;
     int xpos,ypos;
     int velocity=0;
-    int gravity=20;
+    int gravity=10;
     Rect rectangle;
+    int state;//1:right 2:left 3:Jump
+    int type;//1:normal, 2:Super 3:Invincible
 
     public Mario(Context context, Game game){
         //super(context);
@@ -41,7 +44,7 @@ public class Mario {
         //this.marioright[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondleft);
         //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdleft);
         //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthleft);
-
+        this.superright[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstright);
 
 
     }
@@ -99,9 +102,14 @@ public class Mario {
 
     int var=0;
 
-    public void update(int xpos,int ypos){
-        this.ypos=ypos;
-      //  marioheight=marioheight-velocity*10;
+    public void update(){
+        if(marioheight<=game.HEIGHT-(mario.getHeight()+100)&& state==3){
+            velocity+=gravity;
+            marioheight+=velocity;
+
+        }
+
+
 
     }
 
@@ -109,18 +117,27 @@ public class Mario {
         this.canvas=canvas;
         Paint paint=new Paint();
         paint.setColor(Color.GREEN);
-       //if(marioheight<canvas.getHeight()-marioheight){
-        velocity+=gravity;
-        marioheight+=velocity;//}
+
+        update();
+        System.out.println("MARIO HEIGHT:"+marioheight);
+        System.out.println("GAME HEIGHT:"+(game.HEIGHT-mario.getHeight()-100));
+
         rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth(),marioheight+mario.getHeight());
-        canvas.drawRect(rectangle,paint);
-      //  if(var==0){
-        for(int i=0;i<2;i++){
-          //marioright[i].setBounds(rectangle);
+        //canvas.drawRect(rectangle,paint);
+        if(type==1) {
+            if (state == 1)
+                canvas.drawBitmap(marioright[var], MOVE, marioheight, null);
+            else if (state == 2) {
+                canvas.drawBitmap(marioright[var], MOVE, marioheight, null);
 
+            } else if (state == 3) {
+                canvas.drawBitmap(marioright[1], MOVE, marioheight, null);
+            }
         }
-        canvas.drawBitmap(marioright[var],MOVE,marioheight,null);
 
+        else if(type==2){
+            canvas.drawBitmap(superright[0],MOVE,marioheight,null);
+        }
 
 
         var++;
@@ -134,8 +151,7 @@ public class Mario {
 
 
 
-
-    }
+       }
 
 
 
