@@ -32,7 +32,7 @@ public class Goomba {
         goomba2= BitmapFactory.decodeResource(context.getResources(),R.drawable.goomba);
         goombas[0]=goomba1;
         goombas[1]=goomba2;
-       goombaslist.add(new Point(1000,800));
+       goombaslist.add(new Point(1500,800));
 
     }
 
@@ -64,9 +64,10 @@ public class Goomba {
         System.out.println("x"+x);
 
         rectangle=new Rect(x,800,x+goomba1.getWidth(),800+goomba1.getHeight());
-        canvas.drawBitmap(goombas[var],x,800,null);
+
         if(x>0){
-        goombaslist.get(0).x=goombaslist.get(0).x-50;}
+            canvas.drawBitmap(goombas[var],x,800,null);
+            goombaslist.get(0).x=goombaslist.get(0).x-50;}
 
         var++;
         if(var==2){

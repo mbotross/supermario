@@ -17,6 +17,7 @@ public class Mario {
     Bitmap mario;
     Bitmap[] marioright=new Bitmap[4];
     Bitmap[] superright=new Bitmap[4];
+    Bitmap[] marioleft=new Bitmap[4];
     BitmapFactory bit;
     Paint paint=new Paint();
     int MOVE=300;
@@ -103,9 +104,29 @@ public class Mario {
     int var=0;
 
     public void update(){
-        if(marioheight<=game.HEIGHT-(mario.getHeight()+100)&& state==3){
-            velocity+=gravity;
-            marioheight+=velocity;
+        if(type==1) {
+            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) && state == 3) {
+                velocity += gravity;
+                marioheight += velocity;
+                if (marioheight>800){
+                    marioheight=800;
+                }
+
+            }
+
+
+        }
+        else if(type==2){
+            if (marioheight < game.HEIGHT - (superright[0].getHeight() ) && state == 3) {
+                velocity += gravity;
+                marioheight+=velocity;
+                if(marioheight>740){
+                    marioheight=740;
+                }
+
+
+            }
+
 
         }
 

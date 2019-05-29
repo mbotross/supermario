@@ -1,5 +1,4 @@
 package com.example.supermario2;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -52,7 +51,8 @@ public class Mushroom {
         System.out.println("x" + x);
 
         this.rectangle = new Rect(mushroomlist.get(0).x, mushroomlist.get(0).y, mushroomlist.get(0).x+ mushroom.getWidth(), mushroomlist.get(0).y+ mushroom.getHeight());
-        canvas.drawBitmap(mushroom, mushroomlist.get(0).x,mushroomlist.get(0).y, null);
+        if(mushroomlist.get(0).x>0){
+        canvas.drawBitmap(mushroom, mushroomlist.get(0).x,mushroomlist.get(0).y, null);}
         if (mushroomlist.get(0).x > 0 /* && collision detection=true*/ ){
             mushroomlist.get(0).x = mushroomlist.get(0).x - 50;
         }

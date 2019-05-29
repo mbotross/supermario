@@ -21,6 +21,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Canvas canvas;
     Goomba goomba;
     Mushroom mushroom;
+    Levels levels;
     Rect floor;
     int GameState=1;
     int Points=0;
@@ -36,12 +37,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         getHolder().addCallback(this);
         thread = new GameThread(this);
         mario=new Mario(context,this);
-        blocks=new Blocks(context,this);
+       // blocks=new Blocks(context,this);
         wallpaper= BitmapFactory.decodeResource(getResources(),R.drawable.mariobackground);
-        this.obstacles=new Obstacles(context,this);
+        this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
         this.mushroom=new Mushroom(context,this,mario);
-
+        this.levels=new Levels(context,this,mario);
+        levels.initlevel1();
         mario.state=1;
         mario.type=1;
 
@@ -58,9 +60,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         super(context,attrs);
         thread = new GameThread(this);
         mario=new Mario(context,this);
-        blocks=new Blocks(context,this);
+      //  blocks=new Blocks(context,this);
         wallpaper= BitmapFactory.decodeResource(getResources(),R.drawable.mariobackground);
-        this.obstacles=new Obstacles(context,this);
+        this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
         this.mushroom=new Mushroom(context,this,mario);
 
@@ -114,15 +116,23 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
     }
 
-
     public Boolean collision(){
 //
         System.out.println("collision");
-  if(mario.rectangle.intersect(blocks.rectangle)){
+        for(int i=0;i<4;i++) {
+            if (mario.rectangle.top == levels.obstacles1[i].rectangle.bottom){
+                System.out.println("COLLLIDE");
+                return false;
+            }
+            if (mario.rectangle.intersect(levels.obstacles1[i].rectangle)) {
 
-      return false;
-  }
-  else if(mario.rectangle.intersect(goomba.rectangle)){
+                return false;
+
+
+            }
+        }
+
+  if(mario.rectangle.intersect(goomba.rectangle)){
       System.out.println("GOOMBAAAA");
       goomba.changeMario();
       return false;
@@ -162,7 +172,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         canvas.drawBitmap(wallpaper,1,1,null);
 
         mario.draw(canvas);
-        blocks.draw1(canvas);
+       // blocks.draw1(canvas);
+        levels.draw(canvas);
+
         goomba.draw(canvas);
         mushroom.draw(canvas);
         check=collision();
@@ -193,6 +205,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
                 break;
 
+
+            case MotionEvent.ACTION_DOWN:
+                if(mario.MOVE>0 && collision()==true){
+                    //mario.MOVE=mario.MOVE-100;
+                }
+
+                break;
 
 
             }

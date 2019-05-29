@@ -10,18 +10,22 @@ import android.graphics.Rect;
 
 import java.util.ArrayList;
 
-public class Blocks extends Obstacles{
+public class Blocks extends Obstacles {
     Bitmap Block;
-    int top;
-    int left;
-    Rect rectangle;
+   // int top;
+    //int left;
+    //Rect rectangle;
 
     ArrayList<Bitmap> blocksarr=new ArrayList<>();
-    public Blocks(Context context, Game game) {
-        super(context, game);
+    public Blocks(Context context, Game game,Mario mario,int left,int top) {
+        super(context,game,mario);
+        // super(context, game);
         this.Block= BitmapFactory.decodeResource(context.getResources(),R.drawable.block);
-        top=30;
-        left=500;
+        //top=300;
+        //left=500;
+        this.left=left;
+        this.top=top;
+
         init();
 
 
@@ -53,8 +57,18 @@ public class Blocks extends Obstacles{
 
 
     }
-    public void draw2(Canvas canvas){
+    public void draw(Canvas canvas){
 
+
+
+        rectangle=new Rect(left,top,left+Block.getWidth(),top+Block.getHeight());
+        if(left>0){
+        canvas.drawBitmap(Block,left,top,null);}
+        if(mario.MOVE>=canvas.getWidth()/2) {
+            if (left > 0) {
+                left = left - 20;
+            }
+        }
 
 
     }
