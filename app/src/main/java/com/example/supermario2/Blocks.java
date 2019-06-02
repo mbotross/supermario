@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class Blocks extends Obstacles {
     Bitmap Block;
+
    // int top;
     //int left;
     //Rect rectangle;
@@ -37,8 +38,8 @@ public class Blocks extends Obstacles {
         }
     }
 
-    public void update(){
-
+    public void collide(){
+        game.Points=game.Points+10;
 
     }
     public void draw1(Canvas canvas){

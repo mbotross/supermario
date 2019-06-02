@@ -9,12 +9,10 @@ import android.graphics.Rect;
 
 import java.util.ArrayList;
 
-public class Goomba {
-    Context context;
-    Game game;
+public class Goomba extends Obstacles{
+
     Bitmap goomba1,goomba2;
     Bitmap goombas[]=new Bitmap[2];
-    Mario mario;
     Rect rectangle;
     int x;
     int y=800;
@@ -22,6 +20,7 @@ public class Goomba {
     ArrayList<Point> goombaslist=new ArrayList<Point>();
 
     public Goomba(Context context,Game game,Mario mario){
+        super(context,game,mario);
         this.context=context;
         this.game=game;
         this.mario=mario;

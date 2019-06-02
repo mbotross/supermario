@@ -46,6 +46,7 @@ public class Mario {
         //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdleft);
         //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthleft);
         this.superright[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstright);
+        this.superright[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondright);
 
 
     }
@@ -61,24 +62,26 @@ public class Mario {
 
     }
 
-    public void moveright(){
+    public void moveright(int x, int y){
+
+        MOVE=x;
         //check if they press right or left
         //rotate between two bitmaps
         //also check if there aren't any obstacles
-        if(MOVE<=canvas.getWidth()/2) {
-            MOVE = MOVE + 100;
+     /*   if(x>canvas.getWidth()/2) {
+            if (MOVE <= canvas.getWidth() / 2) {
+                MOVE = MOVE + 100;
 
+            }
         }
+        else if(x<canvas.getWidth()/2){
+            if(MOVE>0){
+                MOVE=MOVE-100;
+            }
+        }*/
 
         //while thing underneath mario is a block, move him
         //if there is a empty space underneath him, game is over and mario dies
-
-    }
-    public void moveleft(){
-
-        if(MOVE>0){
-            MOVE=MOVE-100;
-        }
 
     }
 
@@ -157,7 +160,7 @@ public class Mario {
         }
 
         else if(type==2){
-            canvas.drawBitmap(superright[0],MOVE,marioheight,null);
+            canvas.drawBitmap(superright[var],MOVE,marioheight,null);
         }
 
 

@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 
        //setContentView(R.layout.activity_main);
         setContentView(new Game(this));
-     //   supermario= findViewById(R.id.supermario2);
+       // supermario= findViewById(R.id.supermario2);
 
 
         //supermario= (com.example.supermario2.Game) findViewById(R.id.supermario2);

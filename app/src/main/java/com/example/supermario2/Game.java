@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
@@ -25,11 +26,14 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Rect floor;
     int GameState=1;
     int Points=0;
+    float xcoord,ycoord;
+    int mariox,marioy;
 
     Paint paint=new Paint();
     int rotate=1;
     int WIDTH;
     int HEIGHT;
+    Boolean pressed=true;
 
     public Game(Context context) {
 
@@ -111,7 +115,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
     public void update(){
         //mario.collide;
-        mario.moveright();
+        mario.moveright(mariox,marioy);
 
 
     }
@@ -119,12 +123,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     public Boolean collision(){
 //
         System.out.println("collision");
-        for(int i=0;i<4;i++) {
-            if (mario.rectangle.top == levels.obstacles1[i].rectangle.bottom){
+        for(int i=0;i<13;i++) {
+            if (mario.rectangle.top == levels.obstacles1.get(i).rectangle.bottom){
                 System.out.println("COLLLIDE");
                 return false;
             }
-            if (mario.rectangle.intersect(levels.obstacles1[i].rectangle)) {
+            if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+                levels.obstacles1.get(i).collide();
 
                 return false;
 
@@ -158,7 +163,12 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     @Override
     public void draw(Canvas canvas){
         Boolean check;
+        //points
+
+
+        ////
         super.draw(canvas);
+
         this.canvas=canvas;
         WIDTH=canvas.getWidth();
         HEIGHT=canvas.getHeight();
@@ -177,6 +187,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
         goomba.draw(canvas);
         mushroom.draw(canvas);
+        Paint textpaint=new Paint();
+        textpaint.setTextSize(100);
+        textpaint.setColor(Color.WHITE);
+        textpaint.setStyle(Paint.Style.FILL_AND_STROKE);
+        canvas.drawText("Points: ", 200, 200, textpaint);
+        canvas.drawText(Integer.toString(Points), 550, 200, textpaint);
+
         check=collision();
 
 
@@ -193,23 +210,49 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        xcoord=event.getX();
+        ycoord=event.getY();
+
         switch(event.getAction()){
             case MotionEvent.ACTION_UP:
+                //mario.moveright((int)xcoord,(int)ycoord);
+             //   pressed=false;
                 System.out.println("MOVE up");
                 System.out.println(HEIGHT);
                //if(mario.marioheight<>HEIGHT-mario.mario.getHeight())//-mario.marioheight)
-                if(mario.marioheight>=70 && collision()==true){
+                if(ycoord<HEIGHT/2){
+                if(mario.marioheight>=600 && collision()==true){
                     mario.state=3;
-                mario.velocity=-70;}
+                mario.velocity=-70;}}
                 //mario.update(0,60);
 
                 break;
 
 
             case MotionEvent.ACTION_DOWN:
-                if(mario.MOVE>0 && collision()==true){
+                //move mario
+                System.out.println("Canvas width:"+ canvas.getWidth());
+              //  mariox=mario.MOVE+100;
+               // mario.moveright((int)xcoord,(int)ycoord);
+
+               // while(pressed) {
+                    if (xcoord > WIDTH / 2) {
+                        if (mario.MOVE < WIDTH / 2) {
+                            //mariox = mario.MOVE + 100;
+                            mariox = mario.MOVE + 100;
+                        }
+
+                    } else if (xcoord < WIDTH / 2) {
+                        if (mario.MOVE > 0) {
+                            mariox = mario.MOVE - 100;
+                        }
+                    }
+               // }
+
+
+              //  if(mario.MOVE>0 && collision()==true){
                     //mario.MOVE=mario.MOVE-100;
-                }
+                //}
 
                 break;
 

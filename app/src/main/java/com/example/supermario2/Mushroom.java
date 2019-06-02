@@ -25,7 +25,7 @@ public class Mushroom {
 
 
 
-        mushroom = BitmapFactory.decodeResource(context.getResources(), R.drawable.mushroom);
+        mushroom = BitmapFactory.decodeResource(context.getResources(), R.drawable.mushroom1);
         mushroomlist.add(new Point(850,800));
     }
 

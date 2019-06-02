@@ -38,4 +38,11 @@ public class QuestionMark extends Obstacles{
 
 
     }
+
+
+    public void collide(){
+        game.Points=game.Points+10;
+        questionmark=BitmapFactory.decodeResource(context.getResources(),R.drawable.dottedblock);
+
+    }
 }

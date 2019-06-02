@@ -12,6 +12,7 @@ public class Obstacles {
     Rect rectangle;
     int left;
     int top;
+    int collide;
     public Obstacles(Context context,Game game,Mario mario){
         this.context=context;
         this.game=game;
@@ -23,6 +24,10 @@ public class Obstacles {
 
 
     public void draw(Canvas canvas){
+
+
+    }
+    public void collide(){
 
 
     }
