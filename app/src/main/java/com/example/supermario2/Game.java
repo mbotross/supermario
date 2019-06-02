@@ -33,6 +33,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     int rotate=1;
     int WIDTH;
     int HEIGHT;
+    int flag;
     Boolean pressed=true;
 
     public Game(Context context) {
@@ -119,19 +120,55 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
 
     }
+    public Boolean collidedown(){
+
+
+        for(int i=0;i<4;i++) {
+            //  if(mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)){//&& mario.rectangle.bottom==levels.obstacles1.get(i).rectangle.top){
+            //mario.rectangle.bottom = levels.obstacles1.get(i).rectangle.top;
+            for (int j = levels.obstacles1.get(i).rectangle.left; j < levels.obstacles1.get(i).rectangle.right; j++) {
+
+                //if(!levels.obstacles1.get(i).rectangle.contains(mario.rectangle.left,mario.rectangle.bottom+40)){
+
+                  //  flag=0;
+                    //   return true;
+                //}
+                if (mario.rectangle.contains(j, levels.obstacles1.get(i).rectangle.top+mario.mario.getHeight()/2)) {
+                    mario.marioheight = levels.obstacles1.get(i).rectangle.top - mario.mario.getHeight();
+                    flag = 1;
+                    System.out.println("IM HEREEEEE");
+
+
+
+                    return false;
+
+                }
+
+
+                if(!levels.obstacles1.get(i).rectangle.contains(mario.rectangle)){
+                    flag=0;
+                }
+
+                System.out.println("mario height"+mario.rectangle.bottom);
+                System.out.println("blocj height"+ levels.obstacles1.get(i).rectangle.top);
+                System.out.println("block bottom"+levels.obstacles1.get(i).rectangle.bottom);
+
+
+
+            }
+        }
+        return true;
+    }
 
     public Boolean collision(){
 //
         System.out.println("collision");
         for(int i=0;i<13;i++) {
-            if (mario.rectangle.top == levels.obstacles1.get(i).rectangle.bottom){
-                System.out.println("COLLLIDE");
-                return false;
-            }
-            if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
-                levels.obstacles1.get(i).collide();
 
-                return false;
+            if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+               return levels.obstacles1.get(i).collide();
+
+
 
 
             }

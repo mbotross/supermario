@@ -19,12 +19,13 @@ public class Coins extends Obstacles{
         this.top=top;
     }
 
-    public void collide(){
+    public Boolean collide(){
 
         game.Points=game.Points+200;
 
         drawit=false;
         //maybe make sound when mario hits it
+        return true;
 
 
     }

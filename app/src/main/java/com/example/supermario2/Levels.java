@@ -18,6 +18,7 @@ public class Levels {
     Pipes pipes;
     Mario mario;
     Coins coin;
+    int pipetype=1;
     public int var1=24;
     public int var2=32;
 
@@ -42,7 +43,7 @@ public class Levels {
         this.mario=mario;
         this.block=new Blocks(context,game,mario,300,500);
         this.questionmark=new QuestionMark(context,game,mario,400,400);
-        this.pipes=new Pipes(context,game,mario,400,400);
+        this.pipes=new Pipes(context,game,mario,400,400,1);
         this.coin=new Coins(context,game,mario,400,400);
 
     }
@@ -62,11 +63,12 @@ public class Levels {
         for(int i=9;i<13;i++){
             level1[i]=4;
         }
+        level1[13]=3;
 
-        level1coord[0]=new Point(500,400);
-        level1coord[1]=new Point(500+block.Block.getWidth(),400);
-        level1coord[2]=new Point(500+2*block.Block.getWidth(),400);
-        level1coord[3]=new Point(500+3*block.Block.getWidth(),400);
+        level1coord[0]=new Point(500,600);
+        level1coord[1]=new Point(500+block.Block.getWidth(),600);
+        level1coord[2]=new Point(500+2*block.Block.getWidth(),600);
+        level1coord[3]=new Point(500+3*block.Block.getWidth(),600);
 
 
 
@@ -78,14 +80,16 @@ public class Levels {
         level1coord[8]=new Point(1400,770);
 
 
-        level1coord[9]=new Point(500,270);
-        level1coord[10]=new Point(500+coin.coin.getWidth(),270);
-        level1coord[11]=new Point(500+2*coin.coin.getWidth(),270);
-        level1coord[12]=new Point(500+3*coin.coin.getWidth(),270);
+        level1coord[9]=new Point(500,400);
+        level1coord[10]=new Point(500+coin.coin.getWidth(),400);
+        level1coord[11]=new Point(500+2*coin.coin.getWidth(),400);
+        level1coord[12]=new Point(500+3*coin.coin.getWidth(),400);
+
+        level1coord[13]=new Point(2600,650);
 
 
 
-        for(int i=0;i<13;i++){
+        for(int i=0;i<14;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -98,7 +102,11 @@ public class Levels {
 
 
             else if(level1[i]==3){
-                obstacles1.add(new Pipes(context,game,mario,level1coord[i].x,level1coord[i].y));
+                obstacles1.add(new Pipes(context,game,mario,level1coord[i].x,level1coord[i].y,pipetype));
+                pipetype++;
+                if(pipetype==3){
+                    pipetype=1;
+                }
             }
             else if(level1[i]==4){
                 obstacles1.add(new Coins(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -136,7 +144,7 @@ public class Levels {
     public void draw(Canvas canvas){
 
 
-        for(int i=0;i<13;i++){
+        for(int i=0;i<14;i++){
             obstacles1.get(i).draw(canvas);
         }
 

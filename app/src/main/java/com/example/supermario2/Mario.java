@@ -108,7 +108,8 @@ public class Mario {
 
     public void update(){
         if(type==1) {
-            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) && state == 3) {
+            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) && state == 3 && game.collidedown()==true && game.flag==0) {
+               System.out.println("DECREMENT");
                 velocity += gravity;
                 marioheight += velocity;
                 if (marioheight>800){
@@ -147,7 +148,7 @@ public class Mario {
         System.out.println("GAME HEIGHT:"+(game.HEIGHT-mario.getHeight()-100));
 
         rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth(),marioheight+mario.getHeight());
-        //canvas.drawRect(rectangle,paint);
+        canvas.drawRect(rectangle,paint);
         if(type==1) {
             if (state == 1)
                 canvas.drawBitmap(marioright[var], MOVE, marioheight, null);

@@ -27,9 +27,9 @@ public class Obstacles {
 
 
     }
-    public void collide(){
+    public Boolean collide(){
 
-
+    return true;
     }
 
 

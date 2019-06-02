@@ -38,8 +38,17 @@ public class Blocks extends Obstacles {
         }
     }
 
-    public void collide(){
+    public Boolean collide(){
         game.Points=game.Points+10;
+       // if (mario.rectangle.top == levels.obstacles1.get(i).rectangle.bottom){
+         //   System.out.println("COLLLIDE");
+           // return false;
+        //}
+        if(mario.rectangle.top<=rectangle.bottom+10){
+            return false;
+        }
+
+        return true;
 
     }
     public void draw1(Canvas canvas){

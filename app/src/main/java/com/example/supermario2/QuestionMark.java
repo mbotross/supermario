@@ -40,9 +40,13 @@ public class QuestionMark extends Obstacles{
     }
 
 
-    public void collide(){
+    public Boolean collide(){
         game.Points=game.Points+10;
         questionmark=BitmapFactory.decodeResource(context.getResources(),R.drawable.dottedblock);
+        if(mario.rectangle.top<=rectangle.bottom+10){
+            return false;
+        }
 
+        return true;
     }
 }
