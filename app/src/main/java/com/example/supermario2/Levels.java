@@ -22,15 +22,17 @@ public class Levels {
     public int var1=24;
     public int var2=32;
 
-    public int[] level1=new int [16];//1:block 2:questionmark 3:pipes 4:coins
-    public int[] level2=new int [16];
-    public int[] level3=new int [16];
+    public int[] level1=new int [20];//1:block 2:questionmark 3:pipes 4:coins 5: endflag
+    public int[] level2=new int [20];
+    public int[] level3=new int [20];
 
-    public Point[] level1coord=new Point[16];
-    public Point[] level2coord=new Point[16];
-    public Point[] level3coord=new Point[16];
+    public Point[] level1coord=new Point[20];
+    public Point[] level2coord=new Point[20];
+    public Point[] level3coord=new Point[20];
 
     public ArrayList<Obstacles> obstacles1=new ArrayList<Obstacles>();
+    public ArrayList<Obstacles> obstacles2=new ArrayList<Obstacles>();
+    public ArrayList<Obstacles> obstacles3=new ArrayList<Obstacles>();
 
    //Bitmap [][]level1=new Bitmap[32][8];
     //Bitmap [][]level2=new Bitmap[32][8];
@@ -64,6 +66,10 @@ public class Levels {
             level1[i]=4;
         }
         level1[13]=3;
+        for(int i=14;i<18;i++){
+            level1[i]=2;
+        }
+        level1[18]=5;
 
         level1coord[0]=new Point(500,600);
         level1coord[1]=new Point(500+block.Block.getWidth(),600);
@@ -87,9 +93,16 @@ public class Levels {
 
         level1coord[13]=new Point(2600,650);
 
+        level1coord[14]=new Point(3000,600);
+        level1coord[15]=new Point(3200,600);
+        level1coord[16]=new Point(3400,600);
+        level1coord[17]=new Point(3200,400);
+
+        level1coord[18]=new Point(3800,500);
 
 
-        for(int i=0;i<14;i++){
+
+        for(int i=0;i<19;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -110,6 +123,9 @@ public class Levels {
             }
             else if(level1[i]==4){
                 obstacles1.add(new Coins(context,game,mario,level1coord[i].x,level1coord[i].y));
+            }
+            else if(level1[i]==5){
+                obstacles1.add(new EndLevel(context,game,mario,level1coord[i].x,level1coord[i].y));
             }
 
         }
@@ -143,9 +159,20 @@ public class Levels {
     int top=0;
     public void draw(Canvas canvas){
 
-
-        for(int i=0;i<14;i++){
+        if(game.level==1){
+        for(int i=0;i<obstacles1.size();i++){
             obstacles1.get(i).draw(canvas);
+        }}
+        else if(game.level==2){
+            for(int i=0;i<obstacles1.size();i++){
+                obstacles1.get(i).draw(canvas);
+            }
+
+        }
+        else if(game.level==3){
+            for(int i=0;i<obstacles1.size();i++){
+                obstacles1.get(i).draw(canvas);
+            }
         }
 
 

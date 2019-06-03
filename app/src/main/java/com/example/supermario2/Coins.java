@@ -32,13 +32,13 @@ public class Coins extends Obstacles{
     public void draw(Canvas canvas){
         if(drawit==true) {
             rectangle = new Rect(left, top, left + coin.getWidth(), top + coin.getHeight());
-            if (left > 0) {
+           // if (left > 0) {
                 canvas.drawBitmap(coin, left, top, null);
-            }
-            if (mario.MOVE >= canvas.getWidth() / 2) {
-                if (left > 0) {
+           // }
+            if (mario.MOVE >= canvas.getWidth() / 2&& game.pressed) {
+               // if (left > 0) {
                     left = left - 20;
-                }
+               // }
             }
         }
 

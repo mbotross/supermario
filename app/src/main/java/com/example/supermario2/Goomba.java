@@ -17,6 +17,7 @@ public class Goomba extends Obstacles{
     int x;
     int y=800;
     int var=0;
+    int change=0;
     ArrayList<Point> goombaslist=new ArrayList<Point>();
 
     public Goomba(Context context,Game game,Mario mario){
@@ -32,6 +33,7 @@ public class Goomba extends Obstacles{
         goombas[0]=goomba1;
         goombas[1]=goomba2;
        goombaslist.add(new Point(1500,800));
+       goombaslist.add(new Point(2300,800));
 
     }
 
@@ -53,6 +55,7 @@ public class Goomba extends Obstacles{
 
     }
     public void intersect(){
+       // change=1;
 
     }
 
@@ -64,9 +67,16 @@ public class Goomba extends Obstacles{
 
         rectangle=new Rect(x,800,x+goomba1.getWidth(),800+goomba1.getHeight());
 
-        if(x>0){
-            canvas.drawBitmap(goombas[var],x,800,null);
-            goombaslist.get(0).x=goombaslist.get(0).x-50;}
+            if (x > 0 && change == 0) {
+                canvas.drawBitmap(goombas[var], x, 800, null);
+                goombaslist.get(0).x = goombaslist.get(0).x - 50;
+            }
+
+            if (change == 1) {
+                canvas.drawBitmap(goombas[var], x, 800, null);
+                goombaslist.get(0).x = goombaslist.get(0).x + 50;
+            }
+
 
         var++;
         if(var==2){

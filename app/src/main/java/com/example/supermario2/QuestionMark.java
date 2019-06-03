@@ -28,12 +28,12 @@ public class QuestionMark extends Obstacles{
 
 
         rectangle=new Rect(left,top,left+questionmark.getWidth(),top+questionmark.getHeight());
-        if(left>0){
-            canvas.drawBitmap(questionmark,left,top,null);}
-        if(mario.MOVE>=canvas.getWidth()/2) {
-            if (left > 0) {
+        //if(left>0){
+            canvas.drawBitmap(questionmark,left,top,null);//}
+        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed) {
+           // if (left > 0) {
                 left = left - 20;
-            }
+          //  }
         }
 
 

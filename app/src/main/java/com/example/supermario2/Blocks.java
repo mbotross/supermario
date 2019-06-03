@@ -16,7 +16,7 @@ public class Blocks extends Obstacles {
    // int top;
     //int left;
     //Rect rectangle;
-
+    int breakit=0;
     ArrayList<Bitmap> blocksarr=new ArrayList<>();
     public Blocks(Context context, Game game,Mario mario,int left,int top) {
         super(context,game,mario);
@@ -45,6 +45,8 @@ public class Blocks extends Obstacles {
            // return false;
         //}
         if(mario.rectangle.top<=rectangle.bottom+10){
+            breakit=1;
+
             return false;
         }
 
@@ -72,12 +74,20 @@ public class Blocks extends Obstacles {
 
 
         rectangle=new Rect(left,top,left+Block.getWidth(),top+Block.getHeight());
-        if(left>0){
-        canvas.drawBitmap(Block,left,top,null);}
-        if(mario.MOVE>=canvas.getWidth()/2) {
-            if (left > 0) {
+        if(breakit==0){
+        canvas.drawBitmap(Block,left,top,null);
+        }
+        else if(breakit==1){
+           int index=  game.levels.obstacles1.indexOf(this);
+            System.out.println("THI index"+index);
+            game.levels.obstacles1.remove(index);
+        }
+
+
+        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed==true) {
+          //  if (left > 0) {
                 left = left - 20;
-            }
+           // }
         }
 
 
