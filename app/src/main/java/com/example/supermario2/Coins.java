@@ -22,7 +22,7 @@ import android.graphics.Rect;
     public Boolean collide(){
         if(numbercollide==0){
         game.Points=game.Points+200;}
-
+        numbercollide++;
         drawit=false;
         //maybe make sound when mario hits it
         return true;
