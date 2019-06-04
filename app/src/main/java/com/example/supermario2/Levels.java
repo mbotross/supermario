@@ -96,9 +96,9 @@ public class Levels {
         level1coord[14]=new Point(3000,600);
         level1coord[15]=new Point(3200,600);
         level1coord[16]=new Point(3400,600);
-        level1coord[17]=new Point(3200,400);
+        level1coord[17]=new Point(3200,350);
 
-        level1coord[18]=new Point(3800,500);
+        level1coord[18]=new Point(3800,440);
 
 
 

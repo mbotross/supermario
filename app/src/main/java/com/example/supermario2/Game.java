@@ -261,8 +261,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         switch(event.getAction()){
             case MotionEvent.ACTION_UP:
                 //mario.moveright((int)xcoord,(int)ycoord);
-             //   pressed=false;
-                pressed=true;
+                pressed=false;
+               // pressed=true;
                 System.out.println("MOVE up");
                 System.out.println(HEIGHT);
                //if(mario.marioheight<>HEIGHT-mario.mario.getHeight())//-mario.marioheight)
@@ -279,7 +279,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
               //  mariox=mario.MOVE+100;
                // mario.moveright((int)xcoord,(int)ycoord);
 
-               // while(pressed) {
+                //while(pressed) {
                     if (xcoord > WIDTH / 2){//&& ycoord>HEIGHT/2) {
                         if (mario.MOVE < WIDTH / 2){// && xcoord!=mario.MOVE) {
 
