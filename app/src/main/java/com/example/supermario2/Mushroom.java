@@ -38,8 +38,6 @@ public class Mushroom {
         mario.type = 2;
 
 
-
-
     }
 
     public void intersect() {

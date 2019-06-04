@@ -22,6 +22,7 @@ import android.graphics.Rect;
     public Boolean collide(){
         if(numbercollide==0){
         game.Points=game.Points+200;}
+        numbercollide++;
 
         drawit=false;
         //maybe make sound when mario hits it
@@ -35,7 +36,7 @@ import android.graphics.Rect;
            // if (left > 0) {
                 canvas.drawBitmap(coin, left, top, null);
            // }
-            if (mario.MOVE >= canvas.getWidth() / 2&& game.pressed) {
+            if (mario.MOVE >= canvas.getWidth() / 2&& game.pressed && game.collideright()) {
                // if (left > 0) {
                     left = left - 20;
                // }

@@ -12,6 +12,8 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import static java.lang.Math.abs;
+
 public class Game extends SurfaceView implements SurfaceHolder.Callback{
     public GameThread thread;
 
@@ -164,6 +166,82 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
         return true;
     }
+    public Obstacles currentobject(){
+        Obstacles currentobject;
+        int compare;
+        int comparey;
+        int compare2;
+        int compare2y;
+        compare=abs(mario.rectangle.centerX()-levels.obstacles1.get(0).rectangle.centerX());
+        comparey=abs(mario.rectangle.centerY()-levels.obstacles1.get(0).rectangle.centerY());
+        currentobject=levels.obstacles1.get(0);
+        for(int i=1;i<levels.obstacles1.size();i++){
+            compare2=abs(mario.rectangle.centerX()-levels.obstacles1.get(i).rectangle.centerX());
+            compare2y=abs(mario.rectangle.centerY()-levels.obstacles1.get(i).rectangle.centerY());
+            if(compare2<compare && compare2y<comparey){
+                compare=compare2;
+                currentobject=levels.obstacles1.get(i);
+            }
+
+
+
+        }
+
+        return currentobject;
+
+    }
+
+    public Boolean collideright(){
+        Boolean check=true;
+        Obstacles currentobject;
+        currentobject=currentobject();
+        /*if(mario.rectangle.right>=currentobject.rectangle.left){
+            //mario.MOVE=currentobject.rectangle.left;
+            check=false;
+
+        }*/
+
+        if(mario.rectangle.right>=levels.obstacles1.get(8).rectangle.left && mario.rectangle.bottom>=levels.obstacles1.get(8).rectangle.top){
+            mario.MOVE=levels.obstacles1.get(8).rectangle.left;
+            check=false;
+        }
+
+
+        /*for(int i=0;i<levels.obstacles1.size();i++){
+
+            if(mario.rectangle.right>=levels.obstacles1.get(i).left){
+
+            }
+            if(mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)){
+                System.out.println("INTERSECTSSSS");
+                check=false;
+            }*/
+
+            /*for (int j = levels.obstacles1.get(i).rectangle.bottom; j < levels.obstacles1.get(i).rectangle.top; j++)
+            if(mario.rectangle.contains(levels.obstacles1.get(i).left,j)){
+
+                return false;
+            }*/
+
+        return check;
+
+
+
+    }
+
+
+    public Boolean collideup(){
+        Boolean check=true;
+        for(int i=0;i<levels.obstacles1.size();i++) {
+
+            if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+                check= levels.obstacles1.get(i).collide();
+            }
+        }
+
+        return check;
+    }
+
 
     public Boolean collision(){
 //
@@ -281,7 +359,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
                 //while(pressed) {
                     if (xcoord > WIDTH / 2){//&& ycoord>HEIGHT/2) {
-                        if (mario.MOVE < WIDTH / 2){// && xcoord!=mario.MOVE) {
+                        if (mario.MOVE < WIDTH / 2 && collideright()){// && xcoord!=mario.MOVE) {
 
                            // mario.state=1;
                             //mariox = mario.MOVE + 100;
@@ -298,7 +376,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
                     }
                 if(ycoord<HEIGHT/2 && xcoord>WIDTH/2){
 
-                    if(mario.marioheight>=600 && collision()==true){
+                    if(mario.marioheight>=600 && collideup()){
 
                         mario.state=3;
                       //  mariox=mario.MOVE+100;

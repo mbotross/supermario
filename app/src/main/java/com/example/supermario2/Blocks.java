@@ -86,7 +86,7 @@ public class Blocks extends Obstacles {
         }
 
 
-        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed==true) {
+        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed==true && game.collideright()) {
           //  if (left > 0) {
                 left = left - 20;
            // }

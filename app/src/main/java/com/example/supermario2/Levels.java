@@ -146,6 +146,12 @@ public class Levels {
     }
 
 
+    public void initlevel2(){
+
+
+
+    }
+
 
     public void movebackground(){
 

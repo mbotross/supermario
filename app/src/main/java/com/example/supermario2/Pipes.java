@@ -42,7 +42,7 @@ public class Pipes extends Obstacles {
             //if (left > 0) {
                 canvas.drawBitmap(pipes, left, top, null);
             //}
-            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed) {
+            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
                // if (left > 0) {
                     left = left - 20;
                // }
@@ -54,7 +54,7 @@ public class Pipes extends Obstacles {
             //if (left > 0) {
                 canvas.drawBitmap(pipes2, left, top, null);
            // }
-            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed) {
+            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
                 //if (left > 0) {
                     left = left - 20;
                 //}
