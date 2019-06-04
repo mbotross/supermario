@@ -41,7 +41,9 @@ public class QuestionMark extends Obstacles{
 
 
     public Boolean collide(){
-        game.Points=game.Points+10;
+        if(numbercollide==0){
+        game.Points=game.Points+10;}
+        numbercollide++;
         questionmark=BitmapFactory.decodeResource(context.getResources(),R.drawable.dottedblock);
         if(mario.rectangle.top<=rectangle.bottom+10){
             return false;

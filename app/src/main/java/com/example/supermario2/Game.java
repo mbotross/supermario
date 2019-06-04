@@ -27,7 +27,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     int GameState=1;
     int Points=0;
     int lives=3;
-    int level;
+    int level=1;
     float xcoord,ycoord;
     int mariox,marioy;
 

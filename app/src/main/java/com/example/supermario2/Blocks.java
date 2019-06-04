@@ -39,7 +39,9 @@ public class Blocks extends Obstacles {
     }
 
     public Boolean collide(){
-        game.Points=game.Points+10;
+        if(numbercollide==0){
+        game.Points=game.Points+10;}
+        numbercollide++;
        // if (mario.rectangle.top == levels.obstacles1.get(i).rectangle.bottom){
          //   System.out.println("COLLLIDE");
            // return false;

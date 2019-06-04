@@ -13,6 +13,7 @@ public class Obstacles {
     int left;
     int top;
     int collide;
+    int numbercollide=0;
     public Obstacles(Context context,Game game,Mario mario){
         this.context=context;
         this.game=game;
