@@ -110,7 +110,7 @@ public class Mario {
     public void update(){
         if(type==1) {
 
-            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true && game.flag==0) {
+            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true ) {
                System.out.println("DECREMENT");
 
                    velocity += gravity;

@@ -21,7 +21,7 @@ public class EndLevel extends Obstacles {
         rectangle=new Rect(left,top,left+flag.getWidth(),top+flag.getHeight());
         //if(left>0){
         canvas.drawBitmap(flag,left,top,null);//}
-        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed) {
+        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed && game.collideright()) {
             // if (left > 0) {
             left = left - 20;
             //  }

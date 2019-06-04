@@ -78,12 +78,12 @@ public class Levels {
 
 
 
-        level1coord[4]=new Point(1800,600);
-        level1coord[5]=new Point(1800+questionmark.questionmark.getWidth(),600);
-        level1coord[6]=new Point(1800+2*questionmark.questionmark.getWidth(),600);
-        level1coord[7]=new Point(1800+3*questionmark.questionmark.getWidth(),600);
+        level1coord[4]=new Point(2100,600);
+        level1coord[5]=new Point(2100+questionmark.questionmark.getWidth(),600);
+        level1coord[6]=new Point(2100+2*questionmark.questionmark.getWidth(),600);
+        level1coord[7]=new Point(2100+3*questionmark.questionmark.getWidth(),600);
 
-        level1coord[8]=new Point(1400,770);
+        level1coord[8]=new Point(1700,770);
 
 
         level1coord[9]=new Point(500,400);
@@ -91,14 +91,14 @@ public class Levels {
         level1coord[11]=new Point(500+2*coin.coin.getWidth(),400);
         level1coord[12]=new Point(500+3*coin.coin.getWidth(),400);
 
-        level1coord[13]=new Point(2600,650);
+        level1coord[13]=new Point(2900,650);
 
-        level1coord[14]=new Point(3000,600);
-        level1coord[15]=new Point(3200,600);
-        level1coord[16]=new Point(3400,600);
-        level1coord[17]=new Point(3200,350);
+        level1coord[14]=new Point(3400,550);
+        level1coord[15]=new Point(3600,550);
+        level1coord[16]=new Point(3800,550);
+        level1coord[17]=new Point(3600,350);
 
-        level1coord[18]=new Point(3800,440);
+        level1coord[18]=new Point(4300,440);
 
 
 
