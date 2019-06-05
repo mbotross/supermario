@@ -18,6 +18,10 @@ public class Mario {
     Bitmap[] marioright=new Bitmap[4];
     Bitmap[] superright=new Bitmap[4];
     Bitmap[] marioleft=new Bitmap[4];
+    Bitmap[] invinciblemarioright=new Bitmap[2];
+    Bitmap[] invinciblemarioleft=new Bitmap[2];
+    Bitmap[] invinciblesupermarioright=new Bitmap[2];
+    Bitmap[] invinciblesupermarioleft=new Bitmap[2];
     BitmapFactory bit;
     Paint paint=new Paint();
     int MOVE=300;
@@ -27,6 +31,7 @@ public class Mario {
     Rect rectangle;
     int state;//1:right 2:left 3:Jump
     int type;//1:normal, 2:Super 3:Invincible
+    int invincibility = 0;
 
     public Mario(Context context, Game game){
         //super(context);
@@ -35,31 +40,37 @@ public class Mario {
         this.bit=new BitmapFactory();
         this.mario=BitmapFactory.decodeResource(context.getResources(),R.drawable.firstright);
 
-       // this.marioright[0]=(BitmapDrawable) context.getResources().getDrawable(R.drawable.firstright);
-        //this.marioright[0]=(BitmapDrawable) context.getResources().getDrawable(R.drawable.firstright);
+        /* Mario */
         this.marioright[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstright);
         this.marioright[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondright);
-       // this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdright);
+        this.marioleft[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstmarioleft);
+        this.marioleft[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondmarioleft);
+        //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdright);
         //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthright);
         //this.marioright[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstleft);
         //this.marioright[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondleft);
         //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdleft);
         //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthleft);
+        /* Super Mario */
         this.superright[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstright);
         this.superright[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondright);
-        this.marioleft[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstmarioleft);
-        this.marioleft[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondmarioleft);
-
+        /* Invincible Mario */
+        this.invinciblemarioright[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.firstmarioinvincibleright);
+        this.invinciblemarioright[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.secondmarioinvincibleright);
+        this.invinciblemarioleft[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.firstmarioinvincibleleft);
+        this.invinciblemarioleft[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.secondmarioinvincibleleft);
+        /* Invincible Super Mario */
+        this.invinciblesupermarioright[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblefirstright);
+        this.invinciblesupermarioright[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblesecondright);
+        this.invinciblesupermarioleft[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblefirstleft);
+        this.invinciblesupermarioleft[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblesecondleft);
     }
 
     public void initmario(){
 
-
-
     }
 
     public void jump(){
-
 
     }
 
@@ -90,7 +101,6 @@ public class Mario {
 
         if(position.equals("right")){
 
-
         }
         else if(position.equals("left")){
 
@@ -98,9 +108,6 @@ public class Mario {
         else if(position.equals("up")){
 
         }
-
-
-
 
     }
 
@@ -126,7 +133,6 @@ public class Mario {
 
             }
 
-
         }
         else if(type==2){
             if (marioheight < game.HEIGHT - (superright[0].getHeight() ) && state == 3) {
@@ -141,13 +147,9 @@ public class Mario {
                     }
                 }
 
-
             }
 
-
         }
-
-
 
     }
 
@@ -162,40 +164,46 @@ public class Mario {
 
         rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth(),marioheight+mario.getHeight());
         //canvas.drawRect(rectangle,paint);
-        if(type==1) {
+        /* Mario */
+        if(type == 1) {
            // if (game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2)
-              if(state==1 || game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2 )
-                canvas.drawBitmap(marioright[var], MOVE, marioheight, null);
-            else if (state==2 || game.xcoord<game.WIDTH/2 && game.ycoord>game.HEIGHT/2) {
-                canvas.drawBitmap(marioleft[var], MOVE, marioheight, null);
+            if (invincibility == 0) {
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                    canvas.drawBitmap(marioright[var], MOVE, marioheight, null);
+                else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
+                    canvas.drawBitmap(marioleft[var], MOVE, marioheight, null);
 
-            } else if (state == 3) {
+                } else if (state == 3) {
 
-                canvas.drawBitmap(marioright[1], MOVE, marioheight, null);
-            }
-            else if(state==4){
-                canvas.drawBitmap(marioleft[1],MOVE,marioheight,null);
+                    canvas.drawBitmap(marioright[1], MOVE, marioheight, null);
+                } else if (state == 4) {
+                    canvas.drawBitmap(marioleft[1], MOVE, marioheight, null);
+                }
+             /* Invincible Mario */
+            }else{
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                    canvas.drawBitmap(invinciblemarioright[var], MOVE, marioheight, null);
+                else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
+                    canvas.drawBitmap(invinciblemarioleft[var], MOVE, marioheight, null);
+
+                } else if (state == 3) {
+
+                    canvas.drawBitmap(invinciblemarioright[1], MOVE, marioheight, null);
+                } else if (state == 4) {
+                    canvas.drawBitmap(invinciblemarioleft[1], MOVE, marioheight, null);
+                }
             }
         }
-
-        else if(type==2){
+        /* Super Mario */
+        else if(type == 2){
             canvas.drawBitmap(superright[var],MOVE,marioheight,null);
         }
-
 
         var++;
         if(var==2){
             var=0;
         }
 
-
-
-
-
-
-
-       }
-
-
+    }
 
 }

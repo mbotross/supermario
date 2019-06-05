@@ -24,6 +24,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Canvas canvas;
     Goomba goomba;
     Mushroom mushroom;
+    StarMan star;
     Levels levels;
     Rect floor;
     int GameState=1;
@@ -51,6 +52,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
         this.mushroom=new Mushroom(context,this,mario);
+        this.star=new StarMan(context, this,mario);
         this.levels=new Levels(context,this,mario);
         levels.initlevel1();
         mario.state=1;
@@ -74,6 +76,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
         this.mushroom=new Mushroom(context,this,mario);
+        this.star=new StarMan(context, this,mario);
 
         mario.state=1;
         mario.type=1;
@@ -336,6 +339,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
       return false;
   }
 
+  else if(mario.rectangle.intersect(star.rectangle)){
+      star.changeMario();
+      return false;
+  }
+
       return true;
 
 
@@ -376,6 +384,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
         goomba.draw(canvas);
         mushroom.draw(canvas);
+        star.draw(canvas);
         Paint textpaint=new Paint();
         textpaint.setTextSize(100);
         textpaint.setColor(Color.WHITE);
