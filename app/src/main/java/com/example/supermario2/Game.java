@@ -37,7 +37,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     int rotate=1;
     int WIDTH;
     int HEIGHT;
-    int flag;
+    int flag=0;
+    int goombachange=0;
     Boolean pressed=true;
 
     public Game(Context context) {
@@ -172,8 +173,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         Boolean check=true;
         for(int i=0;i<levels.obstacles1.size();i++){
 
-            if(mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)){//&& mario.rectangle.bottom>=levels.obstacles1.get(i).rectangle.top&&mario.rectangle.top<levels.obstacles1.get(i).rectangle.top){
+            if(mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)&& mario.rectangle.bottom>=levels.obstacles1.get(i).rectangle.top&&mario.rectangle.top<levels.obstacles1.get(i).rectangle.top){
                 mario.marioheight=levels.obstacles1.get(i).rectangle.top;
+                flag=1;
                 check=false;
 
             }
@@ -181,11 +183,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
 
         }
+        goomba.CollideMario();
 
         return check;
 
 
     }
+
     public Obstacles currentobject(){
         Obstacles currentobject;
         int compare;
@@ -221,11 +225,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
             if (mario.rectangle.left <= levels.obstacles1.get(i).rectangle.right && mario.rectangle.bottom >= levels.obstacles1.get(i).rectangle.top && !(mario.rectangle.top >= levels.obstacles1.get(i).rectangle.bottom) && mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && mario.rectangle.right>=levels.obstacles1.get(i).rectangle.right) {
                //mario.MOVE = levels.obstacles1.get(i).rectangle.right;
-
-                System.out.println("mario" + mario.rectangle.centerY());
-                System.out.println("object" + currentobject.rectangle.centerY());
-                check = false;
-
+                if(!(levels.obstacles1.get(i) instanceof Coins)) {
+                    System.out.println("mario" + mario.rectangle.centerY());
+                    System.out.println("object" + currentobject.rectangle.centerY());
+                    check = false;
+                }
             }
         }
 
@@ -238,23 +242,25 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     public Boolean collideright(){
         Boolean check=true;
         Obstacles currentobject;
-        currentobject=currentobject();
+      //  currentobject=currentobject();
 
     //   if(mario.rectangle.centerY()>=currentobject.rectangle.centerY()){
       //      return true;
        // }
 
-        for(int i=0;i<levels.obstacles1.size();i++){
-            if(mario.rectangle.right>=levels.obstacles1.get(i).rectangle.left && mario.rectangle.bottom>=levels.obstacles1.get(i).rectangle.top && !(mario.rectangle.top>=levels.obstacles1.get(i).rectangle.bottom) && mario.rectangle.right<levels.obstacles1.get(i).rectangle.right ){
-                mario.MOVE=levels.obstacles1.get(i).rectangle.left;
+        for(int i=0;i<levels.obstacles1.size();i++) {
+            if (mario.rectangle.right >= levels.obstacles1.get(i).rectangle.left && mario.rectangle.bottom >= levels.obstacles1.get(i).rectangle.top && !(mario.rectangle.top >= levels.obstacles1.get(i).rectangle.bottom) && mario.rectangle.right < levels.obstacles1.get(i).rectangle.right) {
+                if (!(levels.obstacles1.get(i) instanceof Coins) && !(levels.obstacles1.get(i) instanceof EndLevel)) {
+                    mario.MOVE = levels.obstacles1.get(i).rectangle.left;
 
-                System.out.println("mario"+mario.rectangle.centerY());
-                System.out.println("object"+currentobject.rectangle.centerY());
-                check=false;
+                    System.out.println("mario" + mario.rectangle.centerY());
+                   // System.out.println("object" + currentobject.rectangle.centerY());
+                    check = false;
+
+                }
+
 
             }
-
-
         }
      /*   if(mario.rectangle.right>=currentobject.rectangle.left && mario.rectangle.bottom>=currentobject.rectangle.top && !(mario.rectangle.top>=currentobject.rectangle.bottom) && mario.rectangle.right<=currentobject.rectangle.right){
             mario.MOVE=currentobject.rectangle.left;
@@ -299,14 +305,27 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     public Boolean collideup(){
         Boolean check=true;
         for(int i=0;i<levels.obstacles1.size();i++) {
-            if (mario.rectangle.top <= levels.obstacles1.get(i).rectangle.bottom && mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
-                check=levels.obstacles1.get(i).collide();
-                check = false;
-            }
-        }
+
+
+                    if (mario.rectangle.top <= levels.obstacles1.get(i).rectangle.bottom && mario.rectangle.bottom > levels.obstacles1.get(i).rectangle.bottom && mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {//mario.rectangle.contains(levels.obstacles1.get(i).rectangle.centerX(),levels.obstacles1.get(i).rectangle.bottom)){//mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && ) {
+
+                        for (int j = levels.obstacles1.get(i).rectangle.left; j < levels.obstacles1.get(i).rectangle.right; j++){
+                          //  for (int k= levels.obstacles1.get(i).rectangle.bottom; k < levels.obstacles1.get(i).rectangle.top; k++) {
+                                 if( mario.rectangle.contains(j, mario.rectangle.centerY())){
+                                     check = levels.obstacles1.get(i).collide();
+                                    mario.marioheight = levels.obstacles1.get(i).rectangle.bottom;
+                                    mario.MOVE=levels.obstacles1.get(i).rectangle.centerX();
+                        //  mario.marioheight=800;
+                        System.out.println("I AM HERREEEE COLLIDE");
+                        //   mario.marioheight=levels.obstacles1.get(i).rectangle.bottom;
+                        check = false;
+                    }
+                }
+        }}
 
         return check;
     }
+
 
 
     public Boolean collision(){
@@ -314,24 +333,29 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         System.out.println("collision");
         for(int i=0;i<levels.obstacles1.size();i++) {
 
-            if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
-               return levels.obstacles1.get(i).collide();}
-
-            if(goomba.rectangle.intersect(levels.obstacles1.get(i).rectangle)){
-                goomba.intersect();
+            //  if (mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+            //   return levels.obstacles1.get(i).collide();}
+            if (levels.obstacles1.get(i) instanceof EndLevel && mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+                level++;
+                if (level == 4) {
+                    level = 3;
+                }
             }
 
-
+            if (levels.obstacles1.get(i) instanceof Coins && mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)) {
+                levels.obstacles1.get(i).collide();
+            }
 
         }
+    for(int i=0;i<goomba.goombaslist.size();i++) {
+        if (mario.rectangle.contains(goomba.goombaslist.get(i).x, goomba.goombaslist.get(i).y)) {
+            System.out.println("GOOMBAAAA");
+            goomba.changeMario();
+            return false;
+        }
+    }
 
-  if(mario.rectangle.intersect(goomba.rectangle)){
-      System.out.println("GOOMBAAAA");
-      goomba.changeMario();
-      return false;
-  }
-
-  else if(mario.rectangle.intersect(mushroom.rectangle)){
+  if(mario.rectangle.intersect(mushroom.rectangle)){
       mushroom.changeMario();
       return false;
   }
@@ -351,6 +375,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     @Override
     public void draw(Canvas canvas){
         Boolean check;
+
         //points
 
 
@@ -374,7 +399,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
         levels.draw(canvas);
 
-        goomba.draw(canvas);
+        for(int i=0;i<goomba.goombaslist.size();i++){
+        goomba.draw(canvas ,i,goombachange);
+
+        }
+
         mushroom.draw(canvas);
         Paint textpaint=new Paint();
         textpaint.setTextSize(100);
@@ -382,8 +411,16 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         textpaint.setStyle(Paint.Style.FILL_AND_STROKE);
         canvas.drawText("Points: ", 200, 200, textpaint);
         canvas.drawText(Integer.toString(Points), 550, 200, textpaint);
+        canvas.drawText("Level: ",800,200,textpaint);
+        canvas.drawText(Integer.toString(level),1100,200,textpaint);
+        canvas.drawText("Lives: ",1300,200,textpaint);
+        canvas.drawText(Integer.toString(lives),1600,200,textpaint);
+       if(GameState==0){
+           canvas.drawText("GAME OVER!",1600,500,textpaint);
 
-        check=collision();
+       }
+
+       check=collision();
 
 
 
@@ -442,15 +479,16 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
                     }
                 if(ycoord<HEIGHT/2 && xcoord>WIDTH/2){
 
-                    if(mario.marioheight>=600 && collision()==true){
+                    if(mario.marioheight>=600 && collideup()){
 
                         mario.state=3;
                       //  mariox=mario.MOVE+100;
                         mario.velocity=-70;}}
 
                 else if(ycoord<HEIGHT/2 && xcoord<WIDTH/2 ){
-                    if(mario.marioheight>=600 && collision()==true){
-                        pressed=false;
+
+                    if(mario.marioheight>=600 && collideup()){
+                      //  pressed=false;
                         mario.state=4;
                       //  mariox=mario.MOVE-100;
                         mario.velocity=-70;}

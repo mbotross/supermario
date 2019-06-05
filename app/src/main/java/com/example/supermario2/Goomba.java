@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 
@@ -19,6 +20,10 @@ public class Goomba extends Obstacles{
     int var=0;
     int change=0;
     ArrayList<Point> goombaslist=new ArrayList<Point>();
+    ArrayList<Rect> goombaslistrect=new ArrayList<Rect>();
+    ArrayList<Integer> goombasmotion=new ArrayList<Integer>();
+
+
 
     public Goomba(Context context,Game game,Mario mario){
         super(context,game,mario);
@@ -32,57 +37,166 @@ public class Goomba extends Obstacles{
         goomba2= BitmapFactory.decodeResource(context.getResources(),R.drawable.goomba);
         goombas[0]=goomba1;
         goombas[1]=goomba2;
-       goombaslist.add(new Point(1500,800));
-       goombaslist.add(new Point(2300,800));
+        goombaslist.add(new Point(1500,800));
+        goombaslist.add(new Point(2300,800));
+        goombaslist.add(new Point(2700,800));
+
+        goombaslist.add(new Point(5700,800));
+
+
+        goombaslistrect.add(new Rect(1500, 800, 1500+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        goombaslistrect.add(new Rect(2300, 800, 2300+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        goombaslistrect.add(new Rect(2700, 800, 2700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        goombaslistrect.add(new Rect(5700, 800, 5700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        for(int i=0;i<goombaslist.size();i++){
+            goombasmotion.add(0);
+        }
+
+
 
     }
 
 
 
     public void changeMario(){
-        if(mario.type==1){
-            game.GameState=0;
-
+        if(mario.type==1 && game.lives>1){
+            game.lives--;
+            if(game.lives==0){
+                game.GameState=0;
+            }
         }
+
         else if(mario.type==2){
             mario.type=1;
         }
-
-
-
-
-
-
     }
-    public void intersect(){
+    public Boolean collideleft(){
+        Boolean check=false;
+
+        for(int i=0;i<goombaslist.size();i++) {
+            for (int j = 0; j < game.levels.obstacles1.size(); j++) {
+                if ((goombaslistrect.get(i).intersect(game.levels.obstacles1.get(j).rectangle) && goombaslistrect.get(i).right>=game.levels.obstacles1.get(j).rectangle.right) || goombaslist.get(i).x<0) {
+                    if (goombasmotion.get(i) == 0) {
+                        goombasmotion.set(i, 1);
+                    }
+                }
+            }
+
+           /* for(int k=0;k<goombaslist.size();k++){
+                if(goombaslistrect.get(i).intersect(goombaslistrect.get(k))&& goombaslistrect.get(i).right>=goombaslistrect.get(k).right){
+                    if (goombasmotion.get(i) == 0) {
+                        goombasmotion.set(i, 1);
+                    }
+                }
+
+            }*/
+        }
+        return check;
+    }
+    public Boolean collideright(){
+        Boolean check=false;
+
+        for(int i=0;i<goombaslist.size();i++) {
+            for (int j = 0; j < game.levels.obstacles1.size(); j++) {
+                if (goombaslistrect.get(i).intersect(game.levels.obstacles1.get(j).rectangle) && goombaslistrect.get(i).right<game.levels.obstacles1.get(j).rectangle.right) {
+                    System.out.println("COLLIDE MEEE");
+                    if (goombasmotion.get(i) == 1) {
+                        goombasmotion.set(i, 0);
+                    }
+                }
+            }
+
+         /*   for(int k=0;k<goombaslist.size();k++){
+                if(goombaslistrect.get(i).intersect(goombaslistrect.get(k))&& goombaslistrect.get(i).right<goombaslistrect.get(k).right){
+                    if (goombasmotion.get(i) == 1) {
+                        goombasmotion.set(i, 0);
+                    }
+                }
+
+            }*/
+        }
+        return check;
+    }
+
+
+    public Boolean CollideMario(){
+        Boolean check=false;
+        for(int i=0;i<goombaslistrect.size();i++){
+            if(goombaslistrect.get(i).intersect(mario.rectangle)){
+                return true;
+            }
+
+        }
+
+
+        return check;
+    }
+
+
+    public void goombaintersect(int index){
+        /*for(int i=0;i<goombaslist.size();i++){
+            for(int j=0;j<goombaslist.size();j++) {
+                if (goombaslistrect.get(i).intersect(goombaslistrect.get(j))){
+                    change=1;
+                }
+
+            }
+
+        }*/
+
+
        // change=1;
 
     }
 
-    public void draw(Canvas canvas){
-        int x=goombaslist.get(0).x;
-        int y=goombaslist.get(0).y;
-        System.out.println(game.WIDTH);
-        System.out.println("x"+x);
+    public void draw(Canvas canvas,int i,int changes) {
+                Boolean destroy=true;//CollideMario();
 
-        rectangle=new Rect(x,800,x+goomba1.getWidth(),800+goomba1.getHeight());
 
-            if (x > 0 && change == 0) {
-                canvas.drawBitmap(goombas[var], x, 800, null);
-                goombaslist.get(0).x = goombaslist.get(0).x - 50;
+                destroy=collideright();
+              destroy=collideleft();
+
+                if(CollideMario()){
+                    goombaslist.remove(i);
+                    goombaslistrect.remove(i);
+                    goombasmotion.remove(i);
+                }
+                Paint paint=new Paint();
+
+                int x = goombaslist.get(i).x;
+                int y = goombaslist.get(i).y;
+                System.out.println(game.WIDTH);
+                System.out.println("x" + x);
+
+                rectangle = new Rect(x, 800, x + goomba1.getWidth(), 800 + goomba1.getHeight());
+                goombaslistrect.set(i,rectangle);
+
+
+                if (goombasmotion.get(i)== 0) {
+                    canvas.drawBitmap(goombas[var], x, 800, null);
+                    //canvas.drawRect(rectangle,paint);
+                    goombaslist.get(i).x = goombaslist.get(i).x - 50;
+
+                }
+
+
+                    if (goombasmotion.get(i) == 1) {
+                        canvas.drawBitmap(goombas[var], x, 800, null);
+                        goombaslist.get(i).x = goombaslist.get(i).x + 50;
+                    }
+
+
+
+
+            var++;
+            if (var == 2) {
+                var = 0;
+            }
             }
 
-            if (change == 1) {
-                canvas.drawBitmap(goombas[var], x, 800, null);
-                goombaslist.get(0).x = goombaslist.get(0).x + 50;
-            }
 
 
-        var++;
-        if(var==2){
-            var=0;
-        }
-    }
+
 
 
 }

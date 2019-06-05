@@ -12,6 +12,7 @@ public class Pipes extends Obstacles {
 
     Bitmap pipes;
     Bitmap pipes2;
+    Bitmap pipes3;
     int type;
     Timer timer=new Timer();
 
@@ -25,6 +26,7 @@ public class Pipes extends Obstacles {
         this.type=type;
         pipes= BitmapFactory.decodeResource(context.getResources(),R.drawable.pipe);
         pipes2=BitmapFactory.decodeResource(context.getResources(),R.drawable.secondpipe);
+        pipes3=BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdpipe);
 
 
 
@@ -41,6 +43,7 @@ public class Pipes extends Obstacles {
             rectangle = new Rect(left, top, left + pipes.getWidth(), top + pipes.getHeight());
             //if (left > 0) {
                 canvas.drawBitmap(pipes, left, top, null);
+              //  canvas.drawRect(rectangle,paint);
             //}
             if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
                // if (left > 0) {
@@ -57,6 +60,20 @@ public class Pipes extends Obstacles {
             if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
                 //if (left > 0) {
                     left = left - 20;
+                //}
+            }
+
+
+        }
+        else if(type==3){
+            System.out.println("HELLOOOOOOOO");
+            rectangle = new Rect(left, top, left + pipes3.getWidth(), top + pipes3.getHeight());
+            //if (left > 0) {
+            canvas.drawBitmap(pipes3, left, top, null);
+            // }
+            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
+                //if (left > 0) {
+                left = left - 20;
                 //}
             }
 

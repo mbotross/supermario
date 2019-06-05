@@ -2,6 +2,7 @@ package com.example.supermario2;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Rect;
 
 public class Obstacles {
@@ -14,6 +15,7 @@ public class Obstacles {
     int top;
     int collide;
     int numbercollide=0;
+    Paint paint=new Paint();
     public Obstacles(Context context,Game game,Mario mario){
         this.context=context;
         this.game=game;

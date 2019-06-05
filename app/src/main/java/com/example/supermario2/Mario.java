@@ -110,11 +110,12 @@ public class Mario {
     public void update(){
         if(type==1) {
 
-            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true ) {
+            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true && game.flag==0) {
                System.out.println("DECREMENT");
 
                    velocity += gravity;
                    marioheight += velocity;
+
                    if (marioheight > 800) {
                        marioheight = 800;
                        if(state==3){
@@ -124,7 +125,9 @@ public class Mario {
                        }
                    }
 
+
             }
+
 
 
         }
@@ -159,10 +162,11 @@ public class Mario {
        update();
         System.out.println("MARIO HEIGHT:"+marioheight);
         System.out.println("GAME HEIGHT:"+(game.HEIGHT-mario.getHeight()-100));
-
         rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth(),marioheight+mario.getHeight());
-        //canvas.drawRect(rectangle,paint);
+
+
         if(type==1) {
+           // canvas.drawRect(rectangle,paint);
            // if (game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2)
               if(state==1 || game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2 )
                 canvas.drawBitmap(marioright[var], MOVE, marioheight, null);
@@ -179,6 +183,8 @@ public class Mario {
         }
 
         else if(type==2){
+            rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
+           // canvas.drawRect(rectangle,paint);
             canvas.drawBitmap(superright[var],MOVE,marioheight,null);
         }
 

@@ -49,15 +49,12 @@ public class Mushroom {
         System.out.println(game.WIDTH);
         System.out.println("x" + x);
 
-        this.rectangle = new Rect(mushroomlist.get(0).x, mushroomlist.get(0).y, mushroomlist.get(0).x+ mushroom.getWidth(), mushroomlist.get(0).y+ mushroom.getHeight());
-        if(mushroomlist.get(0).x>0){
-        canvas.drawBitmap(mushroom, mushroomlist.get(0).x,mushroomlist.get(0).y, null);}
-        if (mushroomlist.get(0).x > 0 /* && collision detection=true*/ ){
-            mushroomlist.get(0).x = mushroomlist.get(0).x - 50;
-        }
-       //else if(/*collision detection=false*/){
-        //    x=x+50;
-        //}
+        this.rectangle = new Rect(mushroomlist.get(0).x, mushroomlist.get(0).y, mushroomlist.get(0).x + mushroom.getWidth(), mushroomlist.get(0).y + mushroom.getHeight());
+
+        canvas.drawBitmap(mushroom, mushroomlist.get(0).x, mushroomlist.get(0).y, null);
+
+        mushroomlist.get(0).x = mushroomlist.get(0).x - 50;
+
 
 
     }

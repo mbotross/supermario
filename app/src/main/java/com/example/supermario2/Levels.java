@@ -22,11 +22,11 @@ public class Levels {
     public int var1=24;
     public int var2=32;
 
-    public int[] level1=new int [20];//1:block 2:questionmark 3:pipes 4:coins 5: endflag
+    public int[] level1=new int [60];//1:block 2:questionmark 3:pipes 4:coins 5: endflag
     public int[] level2=new int [20];
     public int[] level3=new int [20];
 
-    public Point[] level1coord=new Point[20];
+    public Point[] level1coord=new Point[60];
     public Point[] level2coord=new Point[20];
     public Point[] level3coord=new Point[20];
 
@@ -70,6 +70,20 @@ public class Levels {
             level1[i]=2;
         }
         level1[18]=5;
+        for(int i=19;i<22;i++){
+            level1[i]=3;
+        }
+        for(int i=22;i<25;i++){
+            level1[i]=4;
+        }
+        level1[25]=1;
+        level1[26]=2;
+        level1[27]=1;
+        level1[28]=2;
+        level1[29]=1;
+
+
+
 
         level1coord[0]=new Point(500,600);
         level1coord[1]=new Point(500+block.Block.getWidth(),600);
@@ -99,10 +113,31 @@ public class Levels {
         level1coord[17]=new Point(3600,350);
 
         level1coord[18]=new Point(4300,440);
+        //pipes
+        level1coord[19]=new Point(5400,680);
+        level1coord[20]=new Point(6700,770);
+        level1coord[21]=new Point(7500,650);
+        //coins
+        level1coord[22]=new Point(5450,480);
+        level1coord[23]=new Point(6750,570);
+        level1coord[24]=new Point(7550,450);
+
+        level1coord[25]=new Point(8000,600);
+        level1coord[26]=new Point(8000+block.Block.getWidth(),600);
+        level1coord[27]=new Point(8000+block.Block.getWidth()+questionmark.questionmark.getWidth(),600);
+        level1coord[28]=new Point(8000+2*block.Block.getWidth()+questionmark.questionmark.getWidth(),600);
+        level1coord[29]=new Point(8000+2*block.Block.getWidth()+2*questionmark.questionmark.getWidth(),600);
 
 
 
-        for(int i=0;i<19;i++){
+
+
+
+
+
+
+
+        for(int i=0;i<30;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -117,7 +152,7 @@ public class Levels {
             else if(level1[i]==3){
                 obstacles1.add(new Pipes(context,game,mario,level1coord[i].x,level1coord[i].y,pipetype));
                 pipetype++;
-                if(pipetype==3){
+                if(pipetype==4){
                     pipetype=1;
                 }
             }

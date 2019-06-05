@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Rect;
 
 public class QuestionMark extends Obstacles{
@@ -27,11 +28,12 @@ public class QuestionMark extends Obstacles{
 
     public void draw(Canvas canvas){
 
-
+        Paint paint=new Paint();
 
         rectangle=new Rect(left,top,left+questionmark.getWidth(),top+questionmark.getHeight());
         //if(left>0){
             canvas.drawBitmap(questionmark,left,top,null);//}
+
         if(mario.MOVE>=canvas.getWidth()/2 && game.pressed && game.collideright()) {
            // if (left > 0) {
                 left = left - 20;
