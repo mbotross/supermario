@@ -78,11 +78,13 @@ public class Blocks extends Obstacles {
         rectangle=new Rect(left,top,left+Block.getWidth(),top+Block.getHeight());
         if(breakit==0){
         canvas.drawBitmap(Block,left,top,null);
+        //canvas.drawRect(rectangle,paint);
         }
         else if(breakit==1){
            int index=  game.levels.obstacles1.indexOf(this);
             System.out.println("THI index"+index);
             game.levels.obstacles1.remove(index);
+
         }
 
 

@@ -120,7 +120,7 @@ public class Mario {
     public void update(){
         if(type==1) {
 
-            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true && game.flag==0) {
+            if (marioheight < game.HEIGHT - (mario.getHeight() + 120) &&(state==3|| state==4)&& game.collidedown()==true ) {
                System.out.println("DECREMENT");
 
                    velocity += gravity;
@@ -141,7 +141,7 @@ public class Mario {
 
         }
         else if(type==2){
-            if (marioheight < game.HEIGHT - (superright[0].getHeight() ) && state == 3) {
+            if (marioheight < game.HEIGHT - (superright[0].getHeight() ) && state == 3 &&game.collidedown()==true ) {
                 velocity += gravity;
                 marioheight+=velocity;
                 if(marioheight>740){
@@ -167,7 +167,7 @@ public class Mario {
        update();
         System.out.println("MARIO HEIGHT:"+marioheight);
         System.out.println("GAME HEIGHT:"+(game.HEIGHT-mario.getHeight()-100));
-        rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth(),marioheight+mario.getHeight());
+        rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth()+20,marioheight+20+mario.getHeight());
 
 
 

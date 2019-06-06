@@ -43,7 +43,7 @@ public class Pipes extends Obstacles {
             rectangle = new Rect(left, top, left + pipes.getWidth(), top + pipes.getHeight());
             //if (left > 0) {
                 canvas.drawBitmap(pipes, left, top, null);
-              //  canvas.drawRect(rectangle,paint);
+              // canvas.drawRect(rectangle,paint);
             //}
             if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
                // if (left > 0) {
