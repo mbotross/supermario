@@ -12,7 +12,7 @@ String cheese:
 Name your specifications here:
 * What emulator shoule graders use? Pixel
 * Should graders use an Android phone? Yes, use a Pixel
-* Any other requirements? To move right, tap on the lower right corner of the screen. To move left, tap on the lower left corner of the screen. TO jump right or left tap on the top corner of the respective side you would like to jump.
+* Any other requirements? To move right, tap on the lower right corner of the screen. To move left, tap on the lower left corner of the screen. To jump right or left tap on the top corner of the respective side you would like to jump.
 
 ## Functionalities
 [//]: # (Write [x] to mark off what was accomplished.<br/>)
