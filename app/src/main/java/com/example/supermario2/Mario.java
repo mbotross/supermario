@@ -16,8 +16,9 @@ public class Mario {
     public int marioheight=800;
     Bitmap mario;
     Bitmap[] marioright=new Bitmap[4];
-    Bitmap[] superright=new Bitmap[4];
     Bitmap[] marioleft=new Bitmap[4];
+    Bitmap[] superright=new Bitmap[4];
+    Bitmap[] superleft=new Bitmap[4];
     Bitmap[] invinciblemarioright=new Bitmap[2];
     Bitmap[] invinciblemarioleft=new Bitmap[2];
     Bitmap[] invinciblesupermarioright=new Bitmap[2];
@@ -54,6 +55,8 @@ public class Mario {
         /* Super Mario */
         this.superright[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstright);
         this.superright[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondright);
+        this.superleft[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstleft);
+        this.superleft[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondleft);
         /* Invincible Mario */
         this.invinciblemarioright[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.firstmarioinvincibleright);
         this.invinciblemarioright[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.secondmarioinvincibleright);
