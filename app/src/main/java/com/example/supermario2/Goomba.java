@@ -42,12 +42,17 @@ public class Goomba extends Obstacles{
         goombaslist.add(new Point(2700,800));
 
         goombaslist.add(new Point(5700,800));
+        goombaslist.add(new Point(4000,800));
+        goombaslist.add(new Point(3400,800));
+
 
 
         goombaslistrect.add(new Rect(1500, 800, 1500+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(2300, 800, 2300+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(2700, 800, 2700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(5700, 800, 5700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        goombaslistrect.add(new Rect(4000, 800, 4000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+        goombaslistrect.add(new Rect(3400, 800, 3400+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         for(int i=0;i<goombaslist.size();i++){
             goombasmotion.add(0);
         }

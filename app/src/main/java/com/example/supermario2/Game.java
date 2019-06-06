@@ -176,8 +176,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         Boolean check=true;
         for(int i=0;i<levels.obstacles1.size();i++){
 
-            if(mario.rectangle.intersect(levels.obstacles1.get(i).rectangle)&& mario.rectangle.bottom>=levels.obstacles1.get(i).rectangle.top&&mario.rectangle.top<levels.obstacles1.get(i).rectangle.top){
-                mario.marioheight=levels.obstacles1.get(i).rectangle.top;
+            if( mario.rectangle.bottom>=levels.obstacles1.get(i).rectangle.top&&mario.rectangle.top<levels.obstacles1.get(i).rectangle.top && !(levels.obstacles1.get(i) instanceof Coins)){
+                mario.marioheight=levels.obstacles1.get(i).rectangle.top-mario.mario.getHeight();
                 flag=1;
                 check=false;
 
@@ -310,7 +310,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         for(int i=0;i<levels.obstacles1.size();i++) {
 
 
-                    if ((mario.rectangle.top <= levels.obstacles1.get(i).rectangle.bottom +40)&& (mario.rectangle.bottom > levels.obstacles1.get(i).rectangle.bottom) && (levels.obstacles1.get(i).rectangle.left-50<mario.rectangle.centerX()) && (mario.rectangle.centerX()<levels.obstacles1.get(i).rectangle.right+50)){// && levels.obstacles1.get(i).rectangle.bottom<600) {//mario.rectangle.contains(levels.obstacles1.get(i).rectangle.centerX(),levels.obstacles1.get(i).rectangle.bottom)){//mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && ) {
+                    if ((mario.rectangle.top <= levels.obstacles1.get(i).rectangle.bottom +40)&& (mario.rectangle.bottom > levels.obstacles1.get(i).rectangle.bottom) && (levels.obstacles1.get(i).rectangle.left-50<mario.rectangle.left) && (mario.rectangle.left<levels.obstacles1.get(i).rectangle.right+50) && !(levels.obstacles1.get(i) instanceof Pipes)){// && levels.obstacles1.get(i).rectangle.bottom<600) {//mario.rectangle.contains(levels.obstacles1.get(i).rectangle.centerX(),levels.obstacles1.get(i).rectangle.bottom)){//mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && ) {
 
                         check=levels.obstacles1.get(i).collide();
                         mario.marioheight=levels.obstacles1.get(i).rectangle.bottom+40;
