@@ -167,12 +167,12 @@ public class Mario {
        update();
         System.out.println("MARIO HEIGHT:"+marioheight);
         System.out.println("GAME HEIGHT:"+(game.HEIGHT-mario.getHeight()-100));
-        rectangle=new Rect(MOVE, marioheight,MOVE+mario.getWidth()+20,marioheight+20+mario.getHeight());
+        rectangle=new Rect(MOVE-20, marioheight,MOVE+mario.getWidth()+20,marioheight+20+mario.getHeight());
 
 
 
 
-        //canvas.drawRect(rectangle,paint);
+       // canvas.drawRect(rectangle,paint);
         /* Mario */
         if(type == 1) {
 
@@ -191,6 +191,7 @@ public class Mario {
                 }
              /* Invincible Mario */
             }else{
+               // rectangle=new Rect(MOVE, marioheight,MOVE+invinciblemarioright[0].getWidth()+20,marioheight+20+invinciblemarioright[0].getHeight());
                 if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
                     canvas.drawBitmap(invinciblemarioright[var], MOVE, marioheight, null);
                 else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {

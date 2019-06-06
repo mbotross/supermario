@@ -18,11 +18,13 @@ public class Levels {
     Pipes pipes;
     Mario mario;
     Coins coin;
+    Platform platform;
     int pipetype=1;
     public int var1=24;
     public int var2=32;
+    int questiontype=1;
 
-    public int[] level1=new int [60];//1:block 2:questionmark 3:pipes 4:coins 5: endflag
+    public int[] level1=new int [60];//1:block 2:questionmark 3:pipes 4:coins 5: endflag 6: platform
     public int[] level2=new int [20];
     public int[] level3=new int [20];
 
@@ -44,9 +46,10 @@ public class Levels {
         this.context=context;
         this.mario=mario;
         this.block=new Blocks(context,game,mario,300,500);
-        this.questionmark=new QuestionMark(context,game,mario,400,400);
+        this.questionmark=new QuestionMark(context,game,mario,400,400,1);
         this.pipes=new Pipes(context,game,mario,400,400,1);
         this.coin=new Coins(context,game,mario,400,400);
+        this.platform=new Platform(context,game,mario,300,300);
 
     }
 
@@ -83,6 +86,11 @@ public class Levels {
         level1[29]=1;
 
 
+
+        for(int i=30;i<37;i++){
+            level1[i]=6;
+        }
+        level1[37]=3;
 
 
         level1coord[0]=new Point(500,600);
@@ -128,6 +136,17 @@ public class Levels {
         level1coord[28]=new Point(8000+2*block.Block.getWidth()+questionmark.questionmark.getWidth(),600);
         level1coord[29]=new Point(8000+2*block.Block.getWidth()+2*questionmark.questionmark.getWidth(),600);
 
+        level1coord[30]=new Point(9500,650);
+        level1coord[31]=new Point(9500+platform.platform.getWidth(),650-platform.platform.getHeight());
+        level1coord[32]=new Point(9500+2*platform.platform.getWidth(),650-2*platform.platform.getHeight());
+        level1coord[33]=new Point(9500+3*platform.platform.getWidth(),650-3*platform.platform.getHeight());
+
+        level1coord[34]=new Point(9500+4*platform.platform.getWidth(),650-2*platform.platform.getHeight());
+        level1coord[35]=new Point(9500+5*platform.platform.getWidth(),650-platform.platform.getHeight());
+        level1coord[36]=new Point(9500+6*platform.platform.getWidth(),650);
+
+        //pipe
+        level1coord[37]=new Point(12500,670);
 
 
 
@@ -137,7 +156,13 @@ public class Levels {
 
 
 
-        for(int i=0;i<30;i++){
+
+
+
+
+
+
+        for(int i=0;i<38;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -145,7 +170,11 @@ public class Levels {
 
             }
             else if(level1[i]==2){
-                obstacles1.add(new QuestionMark(context,game,mario,level1coord[i].x,level1coord[i].y));
+                obstacles1.add(new QuestionMark(context,game,mario,level1coord[i].x,level1coord[i].y,questiontype));
+                questiontype++;
+                if(questiontype==3){
+                    questiontype=1;
+                }
             }
 
 
@@ -161,6 +190,10 @@ public class Levels {
             }
             else if(level1[i]==5){
                 obstacles1.add(new EndLevel(context,game,mario,level1coord[i].x,level1coord[i].y));
+            }
+            else if(level1[i]==6){
+
+                obstacles1.add(new Platform(context,game,mario,level1coord[i].x,level1coord[i].y));
             }
 
         }

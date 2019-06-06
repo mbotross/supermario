@@ -17,16 +17,21 @@ public class Mushroom {
     ArrayList<Point> mushroomlist=new ArrayList<Point>();
     int x;
     int y = 800;
+    int left, top;
+    int nodraw=0;
 
-    public Mushroom(Context context, Game game, Mario mario) {
+    public Mushroom(Context context, Game game, Mario mario,int left,int top) {
         this.context = context;
         this.game = game;
         this.mario = mario;
+        this.left=left;
+        this.top=top;
 
 
 
         mushroom = BitmapFactory.decodeResource(context.getResources(), R.drawable.mushroom1);
         mushroomlist.add(new Point(850,800));
+        mushroomlist.add(new Point(12500,400));
     }
 
 
@@ -36,6 +41,9 @@ public class Mushroom {
     }
     public void changeMario() {
         mario.type = 2;
+        nodraw=1;
+
+
 
 
     }
@@ -44,16 +52,16 @@ public class Mushroom {
 
     }
 
-    public void draw(Canvas canvas) {
+    public void draw(Canvas canvas, int i) {
 
         System.out.println(game.WIDTH);
         System.out.println("x" + x);
 
-        this.rectangle = new Rect(mushroomlist.get(0).x, mushroomlist.get(0).y, mushroomlist.get(0).x + mushroom.getWidth(), mushroomlist.get(0).y + mushroom.getHeight());
+        this.rectangle = new Rect(mushroomlist.get(i).x, mushroomlist.get(i).y, mushroomlist.get(i).x + mushroom.getWidth(), mushroomlist.get(i).y + mushroom.getHeight());
+        if(nodraw==0){
+        canvas.drawBitmap(mushroom, mushroomlist.get(i).x, mushroomlist.get(i).y, null);}
 
-        canvas.drawBitmap(mushroom, mushroomlist.get(0).x, mushroomlist.get(0).y, null);
-
-        mushroomlist.get(0).x = mushroomlist.get(0).x - 50;
+      //  mushroomlist.get(i).x = mushroomlist.get(i).x - 50;
 
 
 

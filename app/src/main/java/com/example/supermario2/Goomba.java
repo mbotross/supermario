@@ -82,7 +82,7 @@ public class Goomba extends Obstacles{
 
         for(int i=0;i<goombaslist.size();i++) {
             for (int j = 0; j < game.levels.obstacles1.size(); j++) {
-                if ((goombaslistrect.get(i).intersect(game.levels.obstacles1.get(j).rectangle) && goombaslistrect.get(i).right>=game.levels.obstacles1.get(j).rectangle.right) || goombaslist.get(i).x<0) {
+                if ((Rect.intersects(goombaslistrect.get(i),game.levels.obstacles1.get(j).rectangle)&& goombaslistrect.get(i).right>=game.levels.obstacles1.get(j).rectangle.right) || goombaslist.get(i).x<0) {
                     if (goombasmotion.get(i) == 0) {
                         goombasmotion.set(i, 1);
                     }
@@ -105,7 +105,7 @@ public class Goomba extends Obstacles{
 
         for(int i=0;i<goombaslist.size();i++) {
             for (int j = 0; j < game.levels.obstacles1.size(); j++) {
-                if (goombaslistrect.get(i).intersect(game.levels.obstacles1.get(j).rectangle) && goombaslistrect.get(i).right<game.levels.obstacles1.get(j).rectangle.right) {
+                if (Rect.intersects(goombaslistrect.get(i),game.levels.obstacles1.get(j).rectangle)&& goombaslistrect.get(i).right<game.levels.obstacles1.get(j).rectangle.right) {
                     System.out.println("COLLIDE MEEE");
                     if (goombasmotion.get(i) == 1) {
                         goombasmotion.set(i, 0);
@@ -130,6 +130,9 @@ public class Goomba extends Obstacles{
         Boolean check=false;
         for(int i=0;i<goombaslistrect.size();i++){
             if(goombaslistrect.get(i).intersect(mario.rectangle)){
+                goombaslist.remove(i);
+                goombaslistrect.remove(i);
+                goombasmotion.remove(i);
                 return true;
             }
 
@@ -163,11 +166,11 @@ public class Goomba extends Obstacles{
               destroy=collideright();
               destroy=collideleft();
 
-                if(CollideMario()){
+              /*  if(CollideMario()){
                     goombaslist.remove(i);
                     goombaslistrect.remove(i);
                     goombasmotion.remove(i);
-                }
+                }*/
                 Paint paint=new Paint();
 
                 int x = goombaslist.get(i).x;
