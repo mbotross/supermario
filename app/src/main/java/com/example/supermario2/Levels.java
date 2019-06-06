@@ -59,7 +59,7 @@ public class Levels {
             level1[i]=1;
         }
         for(int i=4;i<8;i++){
-            level1[i]=2;
+            level1[i]=1;
         }
         level1[8]=3;
         for(int i=9;i<13;i++){

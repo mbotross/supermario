@@ -59,17 +59,19 @@ public class Goomba extends Obstacles{
 
 
     public void changeMario(){
-        if(mario.type==1 && game.lives>1){
+        if(mario.type==1 && game.lives>1 && mario.invincibility==0){
             game.lives--;
             if(game.lives==0){
                 game.GameState=0;
             }
         }
 
-        else if(mario.type==2){
+        else if(mario.type==2 && mario.invincibility==0){
             mario.type=1;
         }
     }
+
+
     public Boolean collideleft(){
         Boolean check=false;
 
@@ -153,7 +155,7 @@ public class Goomba extends Obstacles{
                 Boolean destroy=true;//CollideMario();
 
 
-                destroy=collideright();
+              destroy=collideright();
               destroy=collideleft();
 
                 if(CollideMario()){

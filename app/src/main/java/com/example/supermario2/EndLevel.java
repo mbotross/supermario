@@ -31,8 +31,15 @@ public class EndLevel extends Obstacles {
 
 
 
-    public Boolean collide(){
 
+    public Boolean collide(){
+        if(numbercollide==0) {
+            game.level++;
+        }
+        numbercollide++;
+        if(game.level==4){
+            game.level=3;
+        }
 
         return true;
     }
