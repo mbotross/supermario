@@ -1,18 +1,18 @@
-# Assignment 4 - *Project Name*
+# Assignment 4 - *Super Mario*
 
-**Project Name** Project description.
+**Super Mario** The Game.
 
-Team Name:
-* **Student Name 1**
-  - UCInetID
-* **Student Name 2**
-  - UCInetID
+String cheese:
+* **Taleen Sarkissian**
+  - tcsarkis
+* **Maria Botross**
+  - mbotross
 
 ## Testing Specifications
 Name your specifications here:
-* What emulator shoule graders use? Example) Pixel 2
-* Should graders use an Android phone?
-* Any other requirements?
+* What emulator shoule graders use? Pixel
+* Should graders use an Android phone? Yes, use a Pixel
+* Any other requirements? To move right, tap on the lower right corner of the screen. To move left, tap on the lower left corner of the screen. TO jump right or left tap on the top corner of the respective side you would like to jump.
 
 ## Functionalities
 [//]: # (Write [x] to mark off what was accomplished.<br/>)
