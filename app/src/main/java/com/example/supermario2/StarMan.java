@@ -24,7 +24,7 @@ public class StarMan {
         this.mario = mario;
 
         star = BitmapFactory.decodeResource(context.getResources(), R.drawable.star);
-        starlist.add(new Point(20000,600));
+        starlist.add(new Point(2000,600));
     }
 
     public void initmushroom(){
