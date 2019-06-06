@@ -205,12 +205,39 @@ public class Mario {
             }
         }
 
-
         else if(type==2){
-            rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
+            /* Mario */
+            // if (game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2)
+            if (invincibility == 0) {
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                    canvas.drawBitmap(superright[var], MOVE, marioheight, null);
+                else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
+                    canvas.drawBitmap(superleft[var], MOVE, marioheight, null);
+
+                } else if (state == 3) {
+
+                    canvas.drawBitmap(superright[1], MOVE, marioheight, null);
+                } else if (state == 4) {
+                    canvas.drawBitmap(superleft[1], MOVE, marioheight, null);
+                }
+                /* Invincible Mario */
+            } else {
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                    canvas.drawBitmap(invinciblesupermarioright[var], MOVE, marioheight, null);
+                else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
+                    canvas.drawBitmap(invinciblesupermarioleft[var], MOVE, marioheight, null);
+
+                } else if (state == 3) {
+
+                    canvas.drawBitmap(invinciblesupermarioright[1], MOVE, marioheight, null);
+                } else if (state == 4) {
+                    canvas.drawBitmap(invinciblesupermarioleft[1], MOVE, marioheight, null);
+                }
+            }
+            //rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
            // canvas.drawRect(rectangle,paint);
 
-            canvas.drawBitmap(superright[var],MOVE,marioheight,null);
+            //canvas.drawBitmap(superright[var],MOVE,marioheight,null);
         }
 
         var++;
