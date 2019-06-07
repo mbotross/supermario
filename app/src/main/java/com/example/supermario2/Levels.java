@@ -23,12 +23,13 @@ public class Levels {
     public int var1=24;
     public int var2=32;
     int questiontype=1;
+    int endlevel=1;
 
-    public int[] level1=new int [60];//1:block 2:questionmark 3:pipes 4:coins 5: endflag 6: platform
+    public int[] level1=new int [70];//1:block 2:questionmark 3:pipes 4:coins 5: endflag 6: platform
     public int[] level2=new int [20];
     public int[] level3=new int [20];
 
-    public Point[] level1coord=new Point[60];
+    public Point[] level1coord=new Point[70];
     public Point[] level2coord=new Point[20];
     public Point[] level3coord=new Point[20];
 
@@ -91,6 +92,23 @@ public class Levels {
             level1[i]=6;
         }
         level1[37]=3;
+        level1[38]=5;
+        level1[39]=6;
+        for(int i=40;i<43;i++){
+            level1[i]=4;
+        }
+        level1[43]=2;
+        level1[44]=6;
+        for(int i=45;i<48;i++){
+            level1[i]=4;
+        }
+        for(int i=48;i<54;i++){
+            level1[i]=1;
+        }
+        for(int i=54;i<60;i++){
+            level1[i]=4;
+        }
+
 
 
         level1coord[0]=new Point(500,600);
@@ -130,23 +148,58 @@ public class Levels {
         level1coord[23]=new Point(6750,570);
         level1coord[24]=new Point(7550,450);
 
-        level1coord[25]=new Point(8000,600);
-        level1coord[26]=new Point(8000+block.Block.getWidth(),600);
-        level1coord[27]=new Point(8000+block.Block.getWidth()+questionmark.questionmark.getWidth(),600);
-        level1coord[28]=new Point(8000+2*block.Block.getWidth()+questionmark.questionmark.getWidth(),600);
-        level1coord[29]=new Point(8000+2*block.Block.getWidth()+2*questionmark.questionmark.getWidth(),600);
+        level1coord[25]=new Point(8000,550);
+        level1coord[26]=new Point(8000+block.Block.getWidth(),550);
+        level1coord[27]=new Point(8000+block.Block.getWidth()+questionmark.questionmark.getWidth(),550);
+        level1coord[28]=new Point(8000+2*block.Block.getWidth()+questionmark.questionmark.getWidth(),550);
+        level1coord[29]=new Point(8000+2*block.Block.getWidth()+2*questionmark.questionmark.getWidth(),550);
 
-        level1coord[30]=new Point(9500,650);
-        level1coord[31]=new Point(9500+platform.platform.getWidth(),650-platform.platform.getHeight());
-        level1coord[32]=new Point(9500+2*platform.platform.getWidth(),650-2*platform.platform.getHeight());
-        level1coord[33]=new Point(9500+3*platform.platform.getWidth(),650-3*platform.platform.getHeight());
+        level1coord[30]=new Point(9500,600);
+        level1coord[31]=new Point(9500+platform.platform.getWidth(),600-platform.platform.getHeight());
+        level1coord[32]=new Point(9500+2*platform.platform.getWidth(),600-2*platform.platform.getHeight());
+        level1coord[33]=new Point(9500+3*platform.platform.getWidth(),600-3*platform.platform.getHeight());
 
-        level1coord[34]=new Point(9500+4*platform.platform.getWidth(),650-2*platform.platform.getHeight());
-        level1coord[35]=new Point(9500+5*platform.platform.getWidth(),650-platform.platform.getHeight());
-        level1coord[36]=new Point(9500+6*platform.platform.getWidth(),650);
+        level1coord[34]=new Point(9500+4*platform.platform.getWidth(),600-2*platform.platform.getHeight());
+        level1coord[35]=new Point(9500+5*platform.platform.getWidth(),600-platform.platform.getHeight());
+        level1coord[36]=new Point(9500+6*platform.platform.getWidth(),600);
 
         //pipe
         level1coord[37]=new Point(12500,670);
+        level1coord[38]=new Point(13000,450);
+
+
+        //Level 3
+        //platform
+        level1coord[39]=new Point(14000,600);
+        //coins
+
+        level1coord[40]=new Point(14000,400);
+        level1coord[41]=new Point(14000+coin.coin.getWidth(),400);
+        level1coord[42]=new Point(14000+2*coin.coin.getWidth(),400);
+
+
+        level1coord[43]=new Point (15000,500);
+        //more platforms
+        level1coord[44]=new Point(15500,600);
+        //coins
+        level1coord[45]=new Point(15500,400);
+        level1coord[46]=new Point(15500+coin.coin.getWidth(),400);
+        level1coord[47]=new Point(15500+2*coin.coin.getWidth(),400);
+
+        //breakable blocks
+        level1coord[48]=new Point(16500,600);
+        level1coord[49]=new Point(16500+block.Block.getWidth(),600);
+        level1coord[50]=new Point(16500+2*block.Block.getWidth(),600);
+        level1coord[51]=new Point(16500+3*block.Block.getWidth(),600);
+        level1coord[52]=new Point(16500+4*block.Block.getWidth(),600);
+        level1coord[53]=new Point(16500+5*block.Block.getWidth(),600);
+        //more coins
+        level1coord[54]=new Point(16500,400);
+        level1coord[55]=new Point(16500+coin.coin.getWidth(),400);
+        level1coord[56]=new Point(16500+2*coin.coin.getWidth(),400);
+        level1coord[57]=new Point(16500+3*coin.coin.getWidth(),400);
+        level1coord[58]=new Point(16500+4*coin.coin.getWidth(),400);
+        level1coord[59]=new Point(16500+5*coin.coin.getWidth(),400);
 
 
 
@@ -162,7 +215,11 @@ public class Levels {
 
 
 
-        for(int i=0;i<38;i++){
+
+
+
+
+        for(int i=0;i<60;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));
@@ -189,7 +246,11 @@ public class Levels {
                 obstacles1.add(new Coins(context,game,mario,level1coord[i].x,level1coord[i].y));
             }
             else if(level1[i]==5){
-                obstacles1.add(new EndLevel(context,game,mario,level1coord[i].x,level1coord[i].y));
+                obstacles1.add(new EndLevel(context,game,mario,level1coord[i].x,level1coord[i].y,endlevel));
+                endlevel++;
+                if(endlevel==4){
+                    endlevel=3;
+                }
             }
             else if(level1[i]==6){
 
