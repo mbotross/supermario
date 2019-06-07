@@ -191,7 +191,7 @@ public class Mario {
                 }
              /* Invincible Mario */
             }else{
-               // rectangle=new Rect(MOVE, marioheight,MOVE+invinciblemarioright[0].getWidth()+20,marioheight+20+invinciblemarioright[0].getHeight());
+               rectangle=new Rect(MOVE, marioheight,MOVE+invinciblemarioright[0].getWidth()+20,marioheight+20+invinciblemarioright[0].getHeight());
                 if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
                     canvas.drawBitmap(invinciblemarioright[var], MOVE, marioheight, null);
                 else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {

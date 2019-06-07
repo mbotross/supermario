@@ -43,7 +43,7 @@ public class GameThread extends Thread {
             { surfaceholder.unlockCanvasAndPost(c); } }
             // Set the frame rate by setting this delay
             try
-            { Thread.sleep(100); } catch (InterruptedException e)
+            { Thread.sleep(80); } catch (InterruptedException e)
             { // Thread was interrupted while sleeping.
                 return; } }
     }
