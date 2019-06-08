@@ -45,4 +45,4 @@ The following **required** functionality is complete:
 The following **additional** features are implemented:<br/>
 * [x] Mario can stand on and interact with blocks and opponents
 * [x] Question mark boxes
-* [ ] Music plays
+* [x] Music plays
