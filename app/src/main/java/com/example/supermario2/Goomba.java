@@ -23,6 +23,7 @@ public class Goomba extends Obstacles{
     ArrayList<Rect> goombaslistrect=new ArrayList<Rect>();
     ArrayList<Integer> goombasmotion=new ArrayList<Integer>();
     ArrayList<Integer> booleangoomba=new ArrayList<Integer>();
+    ArrayList<Integer>goombaimage=new ArrayList<Integer>();
 
 
 
@@ -66,6 +67,7 @@ public class Goomba extends Obstacles{
         for(int i=0;i<goombaslist.size();i++){
             goombasmotion.add(0);
             booleangoomba.add(0);
+            goombaimage.add(0);
         }
 
 
@@ -84,6 +86,7 @@ public class Goomba extends Obstacles{
 
         else if(mario.type==2 && mario.invincibility==0){
             mario.type=1;
+            mario.marioheight=800;
         }
     }
 
@@ -145,6 +148,7 @@ public class Goomba extends Obstacles{
                 goombaslistrect.remove(i);
                 goombasmotion.remove(i);
                 booleangoomba.remove(i);
+                goombaimage.remove(i);
                 return true;
             }
 
@@ -189,6 +193,7 @@ public class Goomba extends Obstacles{
                 int y = goombaslist.get(i).y;
                 System.out.println(game.WIDTH);
                 System.out.println("x" + x);
+                int var=goombaimage.get(i);
 
                 rectangle = new Rect(x, 800, x + goomba1.getWidth(), 800 + goomba1.getHeight());
                 goombaslistrect.set(i,rectangle);
@@ -210,10 +215,12 @@ public class Goomba extends Obstacles{
 
 
 
-            var++;
-            if (var == 2) {
-                var = 0;
-            }
+
+                if(var==0){
+                    goombaimage.set(i,++var);}
+                else if(var==1){
+                    goombaimage.set(i,--var);
+                }
             }
 
 

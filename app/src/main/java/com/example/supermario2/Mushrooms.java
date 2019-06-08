@@ -105,6 +105,10 @@ public class Mushrooms extends Obstacles {
         for(int i=0;i<mushroomlistrect.size();i++){
             if(mushroomlistrect.get(i).intersect(mario.rectangle)){
                 mario.type=2;
+                mario.marioheight=670;
+                if(game.GameState==1){
+                    game.Points=game.Points+1000;
+                }
 
                 return true;
 

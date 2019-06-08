@@ -11,7 +11,7 @@ public class Platform extends Obstacles {
 
 
     Bitmap platform;
-    Mushroom mushroom;
+
 
     public Platform(Context context, Game game, Mario mario, int left, int top) {
         super(context,game,mario);

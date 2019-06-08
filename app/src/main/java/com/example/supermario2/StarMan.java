@@ -25,6 +25,7 @@ public class StarMan {
         this.mario = mario;
         this.left=left;
         this.top=top;
+
         star = BitmapFactory.decodeResource(context.getResources(), R.drawable.star);
         starlist.add(new Point(left,top));
 
@@ -36,15 +37,24 @@ public class StarMan {
 
     public void changeMario() {
         mario.invincibility = 1;
+        if(game.GameState==1){
+            game.Points=game.Points+1000;
+        }
 
     }
 
     public void draw(Canvas canvas) {
 
+
+        System.out.println("left star:"+left);
         this.rectangle = new Rect(starlist.get(0).x, starlist.get(0).y, starlist.get(0).x + star.getWidth(), starlist.get(0).y + star.getHeight());
+
+
         if(starlist.get(0).x > 0){
+            System.out.println("DRAWWW MEE");
             canvas.drawBitmap(star, starlist.get(0).x, starlist.get(0).y, null);}
         starlist.get(0).x = starlist.get(0).x - 50;
+        System.out.println("new x"+starlist.get(0).x);
 
 
 

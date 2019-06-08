@@ -10,7 +10,7 @@ public class QuestionMark extends Obstacles{
 
 
     Bitmap questionmark;
-    Mushroom mushroom;
+   // Mushroom mushroom;
    int questiontype=1;
    Coins coin;
     public QuestionMark(Context context, Game game, Mario mario, int left, int top,int questiontype) {
@@ -41,7 +41,7 @@ public class QuestionMark extends Obstacles{
         }
 
         if(questiontype==1){
-            mushroom=new Mushroom(context,game,mario,left,top);
+            //mushroom=new Mushroom(context,game,mario,left,top);
 
 
         }
@@ -51,7 +51,7 @@ public class QuestionMark extends Obstacles{
 
 
     public Boolean collide(){
-        if(numbercollide==0){
+        if(numbercollide==0 && game.GameState==1){
         game.Points=game.Points+10;}
         numbercollide++;
         questionmark=BitmapFactory.decodeResource(context.getResources(),R.drawable.dottedblock);
@@ -61,7 +61,7 @@ public class QuestionMark extends Obstacles{
 
         }
         else if(questiontype==2){
-            mushroom=new Mushroom(context,game,mario,left,top);
+           // mushroom=new Mushroom(context,game,mario,left,top);
 
 
 

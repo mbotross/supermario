@@ -33,6 +33,7 @@ public class Mario {
     int state;//1:right 2:left 3:Jump
     int type;//1:normal, 2:Super 3:Invincible
     int invincibility = 0;
+    int count=0;
 
     public Mario(Context context, Game game){
         //super(context);
@@ -204,6 +205,12 @@ public class Mario {
                     canvas.drawBitmap(invinciblemarioleft[1], MOVE, marioheight, null);
                 }
             }
+            count++;
+            if (count == 100){
+                invincibility = 0;
+                count = 0;
+            }
+
         }
 
         else if(type==2){
@@ -236,6 +243,13 @@ public class Mario {
                 } else if (state == 4) {
                     canvas.drawBitmap(invinciblesupermarioleft[1], MOVE, marioheight, null);
                 }
+
+                count++;
+                if (count == 100){
+                    invincibility = 0;
+                    count = 0;
+                }
+
             }
             //rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
            // canvas.drawRect(rectangle,paint);

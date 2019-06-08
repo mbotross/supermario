@@ -23,8 +23,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Blocks blocks;
     Canvas canvas;
     Goomba goomba;
-    Mushroom mushroom;
-    Mushroom mushroom2;
+
     Mushrooms mushrooms;
     StarMan star,star2;
     Levels levels;
@@ -62,8 +61,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         this.plant = new Plant(context, this,mario);
       //  this.mushroom=new Mushroom(context,this,mario,1,1);
        // this.mushroom2=new Mushroom(context,this,mario,1,1);
-        this.star=new StarMan(context, this,mario,2000,6000);
-        this.star2=new StarMan(context,this,mario,6000,6000);
+        this.star=new StarMan(context, this,mario,2000,400);
+        this.star2=new StarMan(context,this,mario,40000,400);
         this.levels=new Levels(context,this,mario);
         levels.initlevel1();
         mario.state=1;
@@ -86,9 +85,10 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         wallpaper= BitmapFactory.decodeResource(getResources(),R.drawable.mariobackground);
         this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
-        this.mushroom=new Mushroom(context,this,mario,1,1);
+
         this.star=new StarMan(context, this,mario,2000,6000);
         this.plant=new Plant(context, this,mario);
+
 
         mario.state=1;
         mario.type=1;
@@ -358,7 +358,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         }
     for(int i=0;i<goomba.goombaslist.size();i++) {
 
-        if (Rect.intersects(goomba.goombaslistrect.get(i),mario.rectangle) && goomba.booleangoomba.get(i)==0 && mario.marioheight>=670) {
+        if (Rect.intersects(goomba.goombaslistrect.get(i),mario.rectangle) && goomba.booleangoomba.get(i)==0 && (mario.state==1|| mario.state==2)) {
             System.out.println("GOOMBAAAA");
             if(mario.invincibility==0){
             goomba.changeMario();}
@@ -372,13 +372,17 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     }
         for(int i=0;i<plant.plantslist.size();i++) {
 
-            if (Rect.intersects(plant.plantslistrect.get(i),mario.rectangle)) {
-                System.out.println("GOOMBAAAA");
-                if(plant.plantflag==1){
+            if (Rect.intersects(plant.plantslistrect.get(i),mario.rectangle)&& plant.booleanplant.get(i)==0 ) {
+                if(mario.invincibility==0){
                 plant.changeMario();}
+                else if(mario.invincibility==1){
+                    plant.CollideMario();
+                }
+                plant.booleanplant.set(i,1);
                 return false;
             }
         }
+
 
 
 
@@ -408,6 +412,10 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
     @Override
     public void draw(Canvas canvas){
+        Paint textpaint=new Paint();
+        textpaint.setTextSize(100);
+        textpaint.setColor(Color.WHITE);
+
         Boolean check;
 
         //points
@@ -465,22 +473,27 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
        // mushroom2.draw(canvas,1);
         star.draw(canvas);
         star2.draw(canvas);
-        Paint textpaint=new Paint();
-        textpaint.setTextSize(100);
-        textpaint.setColor(Color.WHITE);
+
         textpaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        canvas.drawText("Points: ", 200, 200, textpaint);
-        canvas.drawText(Integer.toString(Points), 550, 200, textpaint);
+        canvas.drawText("Points: ", 150, 200, textpaint);
+        canvas.drawText(Integer.toString(Points), 500, 200, textpaint);
         canvas.drawText("Level: ",800,200,textpaint);
         canvas.drawText(Integer.toString(level),1100,200,textpaint);
         canvas.drawText("Lives: ",1300,200,textpaint);
         canvas.drawText(Integer.toString(lives),1600,200,textpaint);
-       if(GameState==0){
-           canvas.drawText("GAME OVER!",canvas.getWidth()/2,500,textpaint);
+        check=collision();
 
-       }
 
-       check=collision();
+        //end game
+        if(GameState==0){
+        textpaint.setTextSize(200);
+        canvas.drawText("GAME OVER!",canvas.getWidth()/2-550,500,textpaint);}
+
+
+
+
+
+
 
 
 

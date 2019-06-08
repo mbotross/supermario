@@ -20,7 +20,7 @@ import android.graphics.Rect;
     }
 
     public Boolean collide(){
-        if(numbercollide==0){
+        if(numbercollide==0 && game.GameState==1){
         game.Points=game.Points+200;}
         numbercollide++;
 

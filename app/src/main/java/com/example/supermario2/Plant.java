@@ -17,11 +17,14 @@ public class Plant extends Obstacles{
     Rect rectangle;
     int x;
     int y=800;
-    int var=0;
+
     int change=0;
     int plantflag;
     ArrayList<Point> plantslist=new ArrayList<Point>();
     ArrayList<Rect> plantslistrect=new ArrayList<Rect>();
+    ArrayList<Integer>plantimage=new ArrayList<Integer>();
+    ArrayList<Integer> booleanplant=new ArrayList<Integer>();
+
     //ArrayList<Integer> plantsmotion=new ArrayList<Integer>();
 
     public Plant(Context context, Game game, Mario mario){
@@ -35,7 +38,10 @@ public class Plant extends Obstacles{
         plants[0]=plant;
         plants[1]=plant2;
         plantslist.add(new Point(1700,570));
-        ArrayList<Integer> booleanplant=new ArrayList<Integer>();
+        plantslist.add(new Point(12500,500));
+
+
+
         //plantslist.add(new Point(2300,800));
         //plantslist.add(new Point(2700,800));
 
@@ -43,7 +49,13 @@ public class Plant extends Obstacles{
         //plantslist.add(new Point(4000,800));
         //plantslist.add(new Point(3400,800));
 
-        plantslistrect.add(new Rect(1500, 800, 1500+ plant.getWidth(), 800 + plant.getHeight()));
+        plantslistrect.add(new Rect(1700, 570, 1700+ plant.getWidth(), 570 + plant.getHeight()));
+        plantslistrect.add(new Rect(12500, 570, 15000+ plant.getWidth(), 570 + plant.getHeight()));
+        for(int i=0;i<plantslist.size();i++){
+            plantimage.add(0);
+            booleanplant.add(0);
+        }
+
         //plantslistrect.add(new Rect(2300, 800, 2300+ plant.getWidth(), 800 + plant.getHeight()));
         //plantslistrect.add(new Rect(2700, 800, 2700+ plant.getWidth(), 800 + plant.getHeight()));
         //plantslistrect.add(new Rect(5700, 800, 5700+ plant.getWidth(), 800 + plant.getHeight()));
@@ -79,10 +91,10 @@ public class Plant extends Obstacles{
                     }
                 }
 
-               /* for(int k=0;k<goombaslist.size();k++){
-                    if(goombaslistrect.get(i).intersect(goombaslistrect.get(k))&& goombaslistrect.get(i).right>=goombaslistrect.get(k).right){
-                        if (goombasmotion.get(i) == 0) {
-                            goombasmotion.set(i, 1);
+               /* for(int k=0;k<plantslist.size();k++){
+                    if(plantslistrect.get(i).intersect(plantslistrect.get(k))&& plantslistrect.get(i).right>=plantslistrect.get(k).right){
+                        if (plantsmotion.get(i) == 0) {
+                            plantsmotion.set(i, 1);
                         }
                     }
 
@@ -103,10 +115,10 @@ public class Plant extends Obstacles{
                 }
             }
 
-         /*   for(int k=0;k<goombaslist.size();k++){
-                if(goombaslistrect.get(i).intersect(goombaslistrect.get(k))&& goombaslistrect.get(i).right<goombaslistrect.get(k).right){
-                    if (goombasmotion.get(i) == 1) {
-                        goombasmotion.set(i, 0);
+         /*   for(int k=0;k<plantslist.size();k++){
+                if(plantslistrect.get(i).intersect(plantslistrect.get(k))&& plantslistrect.get(i).right<plantslistrect.get(k).right){
+                    if (plantsmotion.get(i) == 1) {
+                        plantsmotion.set(i, 0);
                     }
                 }
 
@@ -118,10 +130,18 @@ public class Plant extends Obstacles{
     public Boolean CollideMario(){
         Boolean check=false;
         for(int i=0;i<plantslistrect.size();i++){
-            if(plantslistrect.get(i).intersect(mario.rectangle)){
+            if(Rect.intersects(plantslistrect.get(i),mario.rectangle)){
+                plantslist.remove(i);
+                plantslistrect.remove(i);
+                plantimage.remove(i);
+                booleanplant.remove(i);
+
                 return true;
             }
+
         }
+
+
         return check;
     }
 
@@ -137,63 +157,42 @@ public class Plant extends Obstacles{
         }
         //Paint paint=new Paint();
 */
-        int x = plantslist.get(i).x;
-        int y = plantslist.get(i).y;
-
-        rectangle = new Rect(x, y, x + plant.getWidth(), y + plant.getHeight());
-        plantslistrect.set(i,rectangle);
-
-        if(change==1){
-            //Thread.sleep(5000);
-
-            canvas.drawBitmap(plants[var], x, y, null);
-            plantflag=1;
-
-            //wait(5000);
-        }else{
-            canvas.drawBitmap(plants[var], x-40000, y, null);
-            plantflag=0;
-        }
 
 
+            int x = plantslist.get(i).x;
+            int y = plantslist.get(i).y;
+            int var=plantimage.get(i);
 
-        //instead of using wait or sleep, let's draw the plant off screen and then back on screen etc
 
-        //int counter = 0;
-       // while() {
-        /*
-            try {
+            rectangle = new Rect(x, y, x + plant.getWidth(), y + plant.getHeight());
+            plantslistrect.set(i, rectangle);
+
+            if (change == 1) {
                 //Thread.sleep(5000);
-                wait(5000);
-                //counter++;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+
+                canvas.drawBitmap(plants[var], x, y, null);
+               // plantflag = 1;
+
+                //wait(5000);
+            } else {
+                canvas.drawBitmap(plants[var], x - 40000, y, null);
+                //plantflag = 0;
             }
-        //}
-        //canvas.drawBitmap(plants[var], x, y, null);
-*/
-        if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
-        plantslist.get(i).x=plantslist.get(i).x-20;}
 
 
-/*
-        if (plantsmotion.get(i)== 0) {
-            canvas.drawBitmap(plants[var], x, 800, null);
-            //canvas.drawRect(rectangle,paint);
-            plantslist.get(i).x = plantslist.get(i).x - 50;
-        }
-
-        if (plantsmotion.get(i) == 1) {
-            canvas.drawBitmap(plants[var], x, 800, null);
-            plantslist.get(i).x = plantslist.get(i).x + 50;
-        }
-*/
+            if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
+                plantslist.get(i).x = plantslist.get(i).x - 20;
+            }
 
 
 
-        var++;
-        if (var == 2) {
-            var = 0;
-        }
+
+            if(var==0){
+            plantimage.set(i,++var);}
+            else if(var==1){
+                plantimage.set(i,--var);
+            }
+
+
     }
 }
