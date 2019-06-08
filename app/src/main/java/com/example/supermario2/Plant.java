@@ -124,7 +124,7 @@ public class Plant extends Obstacles{
     }
 
     public void draw(Canvas canvas,int i,int change) throws InterruptedException {
-        Boolean destroy=true;//CollideMario();
+
         //destroy=collideright();
         //destroy=collideleft();
 /*

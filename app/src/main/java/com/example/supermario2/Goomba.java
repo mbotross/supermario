@@ -22,6 +22,7 @@ public class Goomba extends Obstacles{
     ArrayList<Point> goombaslist=new ArrayList<Point>();
     ArrayList<Rect> goombaslistrect=new ArrayList<Rect>();
     ArrayList<Integer> goombasmotion=new ArrayList<Integer>();
+    ArrayList<Integer> booleangoomba=new ArrayList<Integer>();
 
 
 
@@ -64,6 +65,7 @@ public class Goomba extends Obstacles{
 
         for(int i=0;i<goombaslist.size();i++){
             goombasmotion.add(0);
+            booleangoomba.add(0);
         }
 
 
@@ -73,7 +75,7 @@ public class Goomba extends Obstacles{
 
 
     public void changeMario(){
-        if(mario.type==1 && game.lives>1 && mario.invincibility==0){
+        if(mario.type==1 && game.lives>=1 && mario.invincibility==0){
             game.lives--;
             if(game.lives==0){
                 game.GameState=0;
@@ -142,6 +144,7 @@ public class Goomba extends Obstacles{
                 goombaslist.remove(i);
                 goombaslistrect.remove(i);
                 goombasmotion.remove(i);
+                booleangoomba.remove(i);
                 return true;
             }
 

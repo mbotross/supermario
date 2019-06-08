@@ -319,6 +319,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
                                 if(mario.rectangle.contains(j,levels.obstacles1.get(i).rectangle.bottom)){
                                     check = levels.obstacles1.get(i).collide();
                                     mario.marioheight = levels.obstacles1.get(i).rectangle.bottom ;
+
                                     check = false;
 
                                 }
@@ -355,24 +356,31 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         }
     for(int i=0;i<goomba.goombaslist.size();i++) {
 
-        if (Rect.intersects(goomba.goombaslistrect.get(i),mario.rectangle)) {
+        if (Rect.intersects(goomba.goombaslistrect.get(i),mario.rectangle) && goomba.booleangoomba.get(i)==0 ) {
             System.out.println("GOOMBAAAA");
             goomba.changeMario();
+            goomba.booleangoomba.set(i,1);
             return false;
         }
     }
+        for(int i=0;i<plant.plantslist.size();i++) {
 
-  //if(mario.rectangle.intersect(mushroom.rectangle)){
-   //   mushroom.changeMario();
-    //  return false;
-  //}
+            if (Rect.intersects(plant.plantslistrect.get(i),mario.rectangle)) {
+                System.out.println("GOOMBAAAA");
+                plant.changeMario();
+                return false;
+            }
+        }
+
+
+
 
     if(mario.rectangle.intersect(star.rectangle)){
       star.changeMario();
       return false;
     }
 
-    if(mario.rectangle.intersect(plant.rectangle));
+
 
       return true;
 
@@ -455,7 +463,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         canvas.drawText("Lives: ",1300,200,textpaint);
         canvas.drawText(Integer.toString(lives),1600,200,textpaint);
        if(GameState==0){
-           canvas.drawText("GAME OVER!",1600,500,textpaint);
+           canvas.drawText("GAME OVER!",canvas.getWidth()/2,500,textpaint);
 
        }
 
