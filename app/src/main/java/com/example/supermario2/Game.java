@@ -192,7 +192,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
                    // && mario.MOVE > levels.obstacles1.get(i).rectangle.left - 30
                     && mario.rectangle.top<levels.obstacles1.get(i).rectangle.top&&
                     mario.MOVE < levels.obstacles1.get(i).rectangle.right + 30 && !(levels.obstacles1.get(i) instanceof Coins) &&
-                    Rect.intersects(mario.rectangle, levels.obstacles1.get(i).rectangle) ) {
+                    Rect.intersects(mario.rectangle, levels.obstacles1.get(i).rectangle) && mario.marioheight<levels.obstacles1.get(i).top-20) {
                     mario.marioheight = levels.obstacles1.get(i).rectangle.top - mario.rectangle.height() + 30;
                     // flag = 1;
                     check = false;
@@ -312,13 +312,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         for(int i=0;i<levels.obstacles1.size();i++) {
 
 
-                    if ((mario.rectangle.top <= levels.obstacles1.get(i).rectangle.bottom ) && !(levels.obstacles1.get(i) instanceof Pipes ) && !(levels.obstacles1.get(i) instanceof EndLevel) && !(levels.obstacles1.get(i)instanceof Coins)){// && levels.obstacles1.get(i).rectangle.bottom<600) {//mario.rectangle.contains(levels.obstacles1.get(i).rectangle.centerX(),levels.obstacles1.get(i).rectangle.bottom)){//mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && ) {
+                    if (!(levels.obstacles1.get(i) instanceof Pipes ) && !(levels.obstacles1.get(i) instanceof EndLevel) && !(levels.obstacles1.get(i)instanceof Coins)){// && levels.obstacles1.get(i).rectangle.bottom<600) {//mario.rectangle.contains(levels.obstacles1.get(i).rectangle.centerX(),levels.obstacles1.get(i).rectangle.bottom)){//mario.rectangle.intersect(levels.obstacles1.get(i).rectangle) && ) {
                         //if((levels.obstacles1.get(i).rectangle.left>mario.rectangle.left && levels.obstacles1.get(i).rectangle.right<mario.rectangle.right)
                         //||(levels.obstacles1.get(i).rectangle.left<mario.rectangle.left && levels.obstacles1.get(i).rectangle.right>mario.rectangle.right)
                         //||(levels.obstacles1.get(i).rectangle.left>mario.rectangle.left && levels.obstacles1.get(i).rectangle.right<mario.rectangle.right)) {
 
                             for(int j=levels.obstacles1.get(i).rectangle.left;j<levels.obstacles1.get(i).rectangle.right;j++){
-                                if(mario.rectangle.contains(j,levels.obstacles1.get(i).rectangle.bottom)){
+                              if(Rect.intersects(mario.rectangle,levels.obstacles1.get(i).rectangle)){
                                     check = levels.obstacles1.get(i).collide();
                                     mario.marioheight = levels.obstacles1.get(i).rectangle.bottom ;
 

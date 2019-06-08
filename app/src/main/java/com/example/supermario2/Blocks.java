@@ -59,7 +59,7 @@ public class Blocks extends Obstacles {
         Paint paint=new Paint();
         paint.setColor(Color.GREEN);
         for(int i=0;i<blocksarr.size();i++){
-            rectangle=new Rect(left,top,left+Block.getWidth(),top+Block.getHeight());
+            rectangle=new Rect(left,top,left+Block.getWidth(),top+20+Block.getHeight());
             canvas.drawBitmap(blocksarr.get(i),left,top,null);
           //  canvas.drawRect(rectangle,paint);
             left=left+Block.getWidth();
@@ -75,7 +75,7 @@ public class Blocks extends Obstacles {
 
 
 
-        rectangle=new Rect(left,top,left+Block.getWidth(),top+Block.getHeight());
+        rectangle=new Rect(left,top,left+Block.getWidth(),top+30+Block.getHeight());
         if(breakit==0){
         canvas.drawBitmap(Block,left,top,null);
         //canvas.drawRect(rectangle,paint);

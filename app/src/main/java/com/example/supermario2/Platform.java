@@ -28,7 +28,7 @@ public class Platform extends Obstacles {
     public void draw(Canvas canvas) {
 
 
-        rectangle = new Rect(left, top, left + platform.getWidth(), top + platform.getHeight());
+        rectangle = new Rect(left, top, left + platform.getWidth(), top + 30+platform.getHeight());
         //if(left>0){
         canvas.drawBitmap(platform, left, top, null);//}
         //canvas.drawRect(rectangle,paint);
