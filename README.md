@@ -29,7 +29,7 @@ The following **required** functionality is complete:
 	- [x] Starman (1000 points, less common)
 * The following transformations are implemented: 
 	- [x] Super Mario (item used: Super Mushroom)
-	- [ ] Invincible Mario (item used: Starman) 
+	- [x] Invincible Mario (item used: Starman) 
 * The following enemies are implemented: 
 	- [x] Little Goomba
 	- [x] Piranha Plant
