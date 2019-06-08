@@ -33,6 +33,7 @@ public class Mario {
     int state;//1:right 2:left 3:Jump
     int type;//1:normal, 2:Super 3:Invincible
     int invincibility = 0;
+    int count=0; //invincibility control
 
     public Mario(Context context, Game game){
         //super(context);
@@ -192,16 +193,20 @@ public class Mario {
              /* Invincible Mario */
             }else{
                rectangle=new Rect(MOVE, marioheight,MOVE+invinciblemarioright[0].getWidth()+20,marioheight+20+invinciblemarioright[0].getHeight());
-                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
                     canvas.drawBitmap(invinciblemarioright[var], MOVE, marioheight, null);
+                }
                 else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
                     canvas.drawBitmap(invinciblemarioleft[var], MOVE, marioheight, null);
-
                 } else if (state == 3) {
 
                     canvas.drawBitmap(invinciblemarioright[1], MOVE, marioheight, null);
                 } else if (state == 4) {
                     canvas.drawBitmap(invinciblemarioleft[1], MOVE, marioheight, null);
+                }
+                count++;
+                if (count == 100){
+                    invincibility = 0;
                 }
             }
         }
@@ -225,17 +230,21 @@ public class Mario {
                 }
                 /* Invincible Mario */
             } else {
-                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
+                if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
                     canvas.drawBitmap(invinciblesupermarioright[var], MOVE, marioheight, null);
-                else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
+                } else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {
                     canvas.drawBitmap(invinciblesupermarioleft[var], MOVE, marioheight, null);
-
                 } else if (state == 3) {
-
                     canvas.drawBitmap(invinciblesupermarioright[1], MOVE, marioheight, null);
                 } else if (state == 4) {
                     canvas.drawBitmap(invinciblesupermarioleft[1], MOVE, marioheight, null);
                 }
+                count++;
+                if (count == 100){
+                    invincibility = 0;
+                    count = 0;
+                }
+
             }
             //rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
            // canvas.drawRect(rectangle,paint);
