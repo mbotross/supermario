@@ -14,17 +14,20 @@ public class StarMan {
     Bitmap star;
     Mario mario;
     Rect rectangle;
+    int left,top;
     ArrayList<Point> starlist = new ArrayList<Point>();
     int x;
     int y = 800;
 
-    public StarMan(Context context, Game game, Mario mario) {
+    public StarMan(Context context, Game game, Mario mario,int left,int top) {
         this.context = context;
         this.game = game;
         this.mario = mario;
-
+        this.left=left;
+        this.top=top;
         star = BitmapFactory.decodeResource(context.getResources(), R.drawable.star);
-        starlist.add(new Point(2000,600));
+        starlist.add(new Point(left,top));
+
     }
 
     public void initmushroom(){
@@ -33,16 +36,7 @@ public class StarMan {
 
     public void changeMario() {
         mario.invincibility = 1;
-        //stays invincible for 10 seconds
 
-        // MOVE THIS SOMEWHERE ELSE my friends
-/*
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        mario.invincibility = 0;*/
     }
 
     public void draw(Canvas canvas) {
