@@ -28,6 +28,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     Mushrooms mushrooms;
     StarMan star;
     Levels levels;
+    Plant plant;
     Rect floor;
     int GameState=1;
     int Points=0;
@@ -35,6 +36,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     int level=1;
     float xcoord,ycoord;
     int mariox,marioy;
+    int changeplant=1;
+    int changeplant2=1;
 
     Paint paint=new Paint();
     int rotate=1;
@@ -55,6 +58,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         this.obstacles=new Obstacles(context,this,mario);
         this.goomba=new Goomba(context,this,mario);
         this.mushrooms=new Mushrooms(context,this,mario);
+        this.plant = new Plant(context, this,mario);
       //  this.mushroom=new Mushroom(context,this,mario,1,1);
        // this.mushroom2=new Mushroom(context,this,mario,1,1);
         this.star=new StarMan(context, this,mario);
@@ -82,6 +86,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
         this.goomba=new Goomba(context,this,mario);
         this.mushroom=new Mushroom(context,this,mario,1,1);
         this.star=new StarMan(context, this,mario);
+        this.plant=new Plant(context, this,mario);
 
         mario.state=1;
         mario.type=1;
@@ -158,7 +163,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
             }
 
                 System.out.println("mario height"+mariochanged);
-                System.out.println("blocj height"+ levels.obstacles1.get(i).rectangle.top);
+                System.out.println("block height"+ levels.obstacles1.get(i).rectangle.top);
                 System.out.println("block bottom"+levels.obstacles1.get(i).rectangle.bottom);
 
 
@@ -365,7 +370,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
     if(mario.rectangle.intersect(star.rectangle)){
       star.changeMario();
       return false;
-  }
+    }
+
+    if(mario.rectangle.intersect(plant.rectangle));
 
       return true;
 
@@ -414,6 +421,25 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
             mushrooms.draw(canvas,i);
 
         }
+        for(int i=0;i<plant.plantslist.size();i++){
+            try {
+                plant.draw(canvas,i,changeplant2);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            changeplant++;
+            if(changeplant>1 && changeplant<25){
+                changeplant2=1;
+            }
+            else if(changeplant>25 && changeplant<50){
+                changeplant2=2;
+                if(changeplant==49){
+                    changeplant=1;
+                }
+            }
+
+        }
+
 
       //  mushroom.draw(canvas,0);
        // mushroom2.draw(canvas,1);
