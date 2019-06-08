@@ -44,4 +44,5 @@ The following **required** functionality is complete:
 [//]: # (* [ ] Got any features?)
 The following **additional** features are implemented:<br/>
 * [x] Mario can stand on and interact with blocks and opponents
+* [x] Question mark boxes
 * [ ] Music plays
