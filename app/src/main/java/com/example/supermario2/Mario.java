@@ -225,6 +225,8 @@ public class Mario {
                 }
                 /* Invincible Mario */
             } else {
+                rectangle=new Rect(MOVE-20, marioheight,MOVE+invinciblesupermarioright[0].getWidth()+20,marioheight+20+invinciblesupermarioright[0].getHeight());
+
                 if (state == 1 || game.xcoord > game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2)
                     canvas.drawBitmap(invinciblesupermarioright[var], MOVE, marioheight, null);
                 else if (state == 2 || game.xcoord < game.WIDTH / 2 && game.ycoord > game.HEIGHT / 2) {

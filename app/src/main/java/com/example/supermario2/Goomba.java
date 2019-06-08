@@ -40,14 +40,14 @@ public class Goomba extends Obstacles{
         goombas[1]=goomba2;
         goombaslist.add(new Point(1500,800));
         goombaslist.add(new Point(2300,800));
-        goombaslist.add(new Point(2700,800));
+
 
         goombaslist.add(new Point(5700,800));
         goombaslist.add(new Point(4000,800));
         goombaslist.add(new Point(3400,800));
         goombaslist.add(new Point(10000,800));
         goombaslist.add(new Point(11000,800));
-        goombaslist.add(new Point(18700,800));
+
 
 
 
@@ -55,13 +55,13 @@ public class Goomba extends Obstacles{
 
         goombaslistrect.add(new Rect(1500, 800, 1500+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(2300, 800, 2300+ goomba1.getWidth(), 800 + goomba1.getHeight()));
-        goombaslistrect.add(new Rect(2700, 800, 2700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+
         goombaslistrect.add(new Rect(5700, 800, 5700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(4000, 800, 4000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(3400, 800, 3400+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(10000, 800, 10000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(11000, 800, 11000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
-        goombaslistrect.add(new Rect(18700, 800, 18700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+
 
         for(int i=0;i<goombaslist.size();i++){
             goombasmotion.add(0);

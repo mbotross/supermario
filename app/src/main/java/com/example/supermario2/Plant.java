@@ -19,6 +19,7 @@ public class Plant extends Obstacles{
     int y=800;
     int var=0;
     int change=0;
+    int plantflag;
     ArrayList<Point> plantslist=new ArrayList<Point>();
     ArrayList<Rect> plantslistrect=new ArrayList<Rect>();
     //ArrayList<Integer> plantsmotion=new ArrayList<Integer>();
@@ -34,6 +35,7 @@ public class Plant extends Obstacles{
         plants[0]=plant;
         plants[1]=plant2;
         plantslist.add(new Point(1700,570));
+        ArrayList<Integer> booleanplant=new ArrayList<Integer>();
         //plantslist.add(new Point(2300,800));
         //plantslist.add(new Point(2700,800));
 
@@ -145,10 +147,12 @@ public class Plant extends Obstacles{
             //Thread.sleep(5000);
 
             canvas.drawBitmap(plants[var], x, y, null);
+            plantflag=1;
 
             //wait(5000);
         }else{
             canvas.drawBitmap(plants[var], x-40000, y, null);
+            plantflag=0;
         }
 
 
@@ -171,6 +175,7 @@ public class Plant extends Obstacles{
         if (mario.MOVE >= canvas.getWidth() / 2 && game.pressed && game.collideright()) {
         plantslist.get(i).x=plantslist.get(i).x-20;}
 
+
 /*
         if (plantsmotion.get(i)== 0) {
             canvas.drawBitmap(plants[var], x, 800, null);
@@ -183,6 +188,9 @@ public class Plant extends Obstacles{
             plantslist.get(i).x = plantslist.get(i).x + 50;
         }
 */
+
+
+
         var++;
         if (var == 2) {
             var = 0;

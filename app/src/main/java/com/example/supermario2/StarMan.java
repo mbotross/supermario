@@ -46,11 +46,15 @@ public class StarMan {
     }
 
     public void draw(Canvas canvas) {
+
         this.rectangle = new Rect(starlist.get(0).x, starlist.get(0).y, starlist.get(0).x + star.getWidth(), starlist.get(0).y + star.getHeight());
         if(starlist.get(0).x > 0){
             canvas.drawBitmap(star, starlist.get(0).x, starlist.get(0).y, null);}
-        if (starlist.get(0).x > 0 /* && collision detection=true*/ ){
-            starlist.get(0).x = starlist.get(0).x - 50;
-        }
+        starlist.get(0).x = starlist.get(0).x - 50;
+
+
+
+
+
     }
 }
