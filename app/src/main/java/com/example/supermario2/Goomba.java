@@ -61,6 +61,7 @@ public class Goomba extends Obstacles{
         goombaslistrect.add(new Rect(10000, 800, 10000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(11000, 800, 11000+ goomba1.getWidth(), 800 + goomba1.getHeight()));
         goombaslistrect.add(new Rect(18700, 800, 18700+ goomba1.getWidth(), 800 + goomba1.getHeight()));
+
         for(int i=0;i<goombaslist.size();i++){
             goombasmotion.add(0);
         }

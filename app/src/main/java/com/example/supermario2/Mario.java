@@ -144,8 +144,8 @@ public class Mario {
             if (marioheight < game.HEIGHT - (superright[0].getHeight() ) && state == 3 &&game.collidedown()==true ) {
                 velocity += gravity;
                 marioheight+=velocity;
-                if(marioheight>700){
-                    marioheight=700;
+                if(marioheight>670){
+                    marioheight=670;
                     if(state==3){
                         state=1;}
                     else if(state==4){
@@ -208,7 +208,7 @@ public class Mario {
 
         else if(type==2){
             rectangle=new Rect(MOVE-20, marioheight,MOVE+superright[0].getWidth()+20,marioheight+20+superright[0].getHeight());
-            canvas.drawRect(rectangle,paint);
+           // canvas.drawRect(rectangle,paint);
             /* Mario */
             // if (game.xcoord>game.WIDTH/2 && game.ycoord>game.HEIGHT/2)
             if (invincibility == 0) {

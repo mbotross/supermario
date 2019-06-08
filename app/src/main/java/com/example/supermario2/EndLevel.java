@@ -10,11 +10,13 @@ public class EndLevel extends Obstacles {
 
     Bitmap flag;
     Bitmap castle;
+    Bitmap endpipe;
     int type;
     public EndLevel(Context context, Game game, Mario mario,int left,int top,int type) {
         super(context, game, mario);
         this.flag= BitmapFactory.decodeResource(context.getResources(),R.drawable.flag);
         this.castle=BitmapFactory.decodeResource(context.getResources(),R.drawable.castle);
+        this.endpipe=BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdlevelend);
 
         this.left=left;
         this.top=top;
@@ -41,6 +43,16 @@ public class EndLevel extends Obstacles {
                 //  }
             }
 
+
+        }
+        else if(type==3){
+            rectangle=new Rect(left,top,left+endpipe.getWidth(),top+endpipe.getHeight());
+            canvas.drawBitmap(endpipe,left,top,null);//}
+            if(mario.MOVE>=canvas.getWidth()/2 && game.pressed && game.collideright()) {
+                 if (left>canvas.getWidth()-endpipe.getWidth()) {
+                      left = left - 20;
+                  }
+            }
 
         }
 

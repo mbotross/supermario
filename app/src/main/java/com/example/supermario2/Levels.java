@@ -109,7 +109,7 @@ public class Levels {
         for(int i=54;i<66;i++){
             level1[i]=4;
         }
-
+        level1[66]=5;
 
 
         level1coord[0]=new Point(500,550);
@@ -211,6 +211,8 @@ public class Levels {
         level1coord[64]=new Point(19000+4*coin.coin.getWidth(),800);
         level1coord[65]=new Point(19000+5*coin.coin.getWidth(),800);
 
+        //end level
+        level1coord[66]=new Point(19000+5*coin.coin.getWidth()+600,600);
 
 
 
@@ -233,7 +235,8 @@ public class Levels {
 
 
 
-        for(int i=0;i<66;i++){
+
+        for(int i=0;i<67;i++){
             if(level1[i]==1){
 
                 obstacles1.add(new Blocks(context,game,mario,level1coord[i].x,level1coord[i].y));

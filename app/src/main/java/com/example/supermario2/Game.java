@@ -473,8 +473,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
                 //while(pressed) {
                     if (xcoord > WIDTH / 2){//&& ycoord>HEIGHT/2) {
-                        if (mario.MOVE < WIDTH / 2 && collideright()){// && xcoord!=mario.MOVE) {
-
+                        if ((mario.MOVE < WIDTH / 2 ) && collideright()){// && xcoord!=mario.MOVE) {
 
                             mariox = mario.MOVE + 100;
                         }
