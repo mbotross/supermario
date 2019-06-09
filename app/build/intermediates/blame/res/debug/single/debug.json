@@ -12,12 +12,12 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -36,12 +36,16 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\raw_ibelieve.mp3.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\raw\\ibelieve.mp3"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\tooltip_frame_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -68,6 +72,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superfirstright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superfirstright.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\125754db1065a6b1c3548dac3a8d206a\\res\\layout-v21\\notification_template_icon_group.xml"
     },
@@ -82,6 +90,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superinvinciblesecondleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superinvinciblesecondleft.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mariobackground.jpg.flat",
@@ -104,24 +116,28 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thirdlevelend.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\thirdlevelend.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -152,6 +168,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dottedblock.jpg.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\dottedblock.jpg"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -164,12 +184,12 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
@@ -204,12 +224,12 @@
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\sky.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -230,6 +250,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superinvinciblefirstright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superinvinciblefirstright.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -282,6 +306,14 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_goomba.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\goomba.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_crushedgoomba.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\crushedgoomba.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -344,6 +376,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_star.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\star.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -362,6 +398,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thirdpipe.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\thirdpipe.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -440,6 +480,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_castle.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\castle.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
@@ -454,6 +498,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_platform.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\platform.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -494,6 +542,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\125754db1065a6b1c3548dac3a8d206a\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plant.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\plant.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -576,6 +628,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstmarioinvincibleleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\firstmarioinvincibleleft.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\anim\\abc_popup_enter.xml"
     },
@@ -624,6 +680,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mushroom1.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\mushroom1.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -664,12 +724,12 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\125754db1065a6b1c3548dac3a8d206a\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\125754db1065a6b1c3548dac3a8d206a\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -696,12 +756,12 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -748,6 +808,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-v21\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_coin.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\coin.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -774,6 +838,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_goombatwo.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\goombatwo.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
@@ -808,6 +876,10 @@
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superinvinciblesecondright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superinvinciblesecondright.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -824,16 +896,20 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flag.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\flag.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
@@ -866,6 +942,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondmarioleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\secondmarioleft.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
@@ -940,6 +1020,10 @@
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\mario.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstmarioleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\firstmarioleft.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
@@ -950,6 +1034,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstmarioinvincibleright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\firstmarioinvincibleright.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
@@ -1152,8 +1240,16 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\raw_supermusic.mp3.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\raw\\supermusic.mp3"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondpipe.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\secondpipe.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1188,6 +1284,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_questionmark.jpg.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\questionmark.jpg"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable\\abc_btn_radio_material.xml"
     },
@@ -1214,6 +1314,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pipe.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\pipe.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1276,8 +1380,16 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondmarioinvincibleleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\secondmarioinvincibleleft.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_supersecondleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\supersecondleft.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -1312,6 +1424,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstinvisibleright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\firstinvisibleright.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1338,6 +1454,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thirdright.png.flat",
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\thirdright.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_planttwo.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\planttwo.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1380,6 +1500,10 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondmarioinvincibleright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\secondmarioinvincibleright.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -1398,6 +1522,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superfirstleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superfirstleft.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
@@ -1472,6 +1600,10 @@
         "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_superinvinciblefirstleft.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\superinvinciblefirstleft.png"
+    },
+    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -1480,12 +1612,12 @@
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\125754db1065a6b1c3548dac3a8d206a\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
@@ -1554,6 +1686,10 @@
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c7a011f4cd0efe02b27632545e557968\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_supersecondright.png.flat",
+        "source": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\src\\main\\res\\drawable\\supersecondright.png"
     },
     {
         "merged": "C:\\Users\\maria\\AndroidStudioProjects\\SuperMario2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_transparent.png.flat",
