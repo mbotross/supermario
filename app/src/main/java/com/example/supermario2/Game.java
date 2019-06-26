@@ -195,12 +195,14 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
                     Rect.intersects(mario.rectangle, levels.obstacles1.get(i).rectangle) && mario.marioheight<levels.obstacles1.get(i).top-20) {
                     mario.marioheight = levels.obstacles1.get(i).rectangle.top - mario.rectangle.height() + 30;
                     // flag = 1;
+
                     check = false;
 
 
 
 
             }
+
 
 
             // }
@@ -450,11 +452,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback{
 
         }
         for(int i=0;i<plant.plantslist.size();i++){
-            try {
+
                 plant.draw(canvas,i,changeplant2);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             changeplant++;
             if(changeplant>1 && changeplant<25){
                 changeplant2=1;

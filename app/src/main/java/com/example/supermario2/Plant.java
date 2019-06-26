@@ -52,8 +52,8 @@ public class Plant extends Obstacles{
         plantslistrect.add(new Rect(1700, 570, 1700+ plant.getWidth(), 570 + plant.getHeight()));
         plantslistrect.add(new Rect(12500, 570, 15000+ plant.getWidth(), 570 + plant.getHeight()));
         for(int i=0;i<plantslist.size();i++){
-            plantimage.add(0);
-            booleanplant.add(0);
+            plantimage.add(i);
+            booleanplant.add(i);
         }
 
         //plantslistrect.add(new Rect(2300, 800, 2300+ plant.getWidth(), 800 + plant.getHeight()));
@@ -145,7 +145,7 @@ public class Plant extends Obstacles{
         return check;
     }
 
-    public void draw(Canvas canvas,int i,int change) throws InterruptedException {
+    public void draw(Canvas canvas,int i,int change) {
 
         //destroy=collideright();
         //destroy=collideleft();

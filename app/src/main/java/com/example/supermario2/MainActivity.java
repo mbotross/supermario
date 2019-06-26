@@ -2,15 +2,17 @@ package com.example.supermario2;
 
 
 import android.app.Activity;
-import android.content.pm.ActivityInfo;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.Window;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
    Game supermario;
+   int gameflag=0;
     MediaPlayer song;
 
     @Override
@@ -20,47 +22,44 @@ public class MainActivity extends Activity {
         song.start();
 
         super.onCreate(savedInstanceState);
+        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-       //setContentView(R.layout.activity_main);
-        setContentView(new Game(this));
-       // supermario= findViewById(R.id.supermario2);
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_main);
+        Button buttons =(Button) findViewById(R.id.start);
 
-
-        //supermario= (com.example.supermario2.Game) findViewById(R.id.supermario2);
-
-    /*    findViewById(R.id.right_button).setOnClickListener(new View.OnClickListener() {
+        buttons.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                supermario.shiftRight();
-            }
-        });
-        /*
+            public void onClick(View view){
 
-        findViewById(R.id.left_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                supermario.shiftLeft();
-            }
-        });
-        /*
-        findViewById(R.id.rotate_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                supermario.jump();
 
+
+               Intent intent=new Intent(getApplicationContext(),GameActivity.class);
+               startActivity(intent);
             }
         });
 
-    */
 
-       /* if(tetris.endgame()){
-            System.out.println("END GAME");
-            finish();
 
-        }*/
+
+       // setContentView(new Game(this));
 
     }
+
+   /* public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.start:
+                startActivity(new Intent(this, Game.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }*/
 }
