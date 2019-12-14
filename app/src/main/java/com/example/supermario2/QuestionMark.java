@@ -10,9 +10,10 @@ public class QuestionMark extends Obstacles{
 
 
     Bitmap questionmark;
-   // Mushroom mushroom;
+   Mushrooms mushroom;
    int questiontype=1;
    Coins coin;
+   int drawit=0;
     public QuestionMark(Context context, Game game, Mario mario, int left, int top,int questiontype) {
         super(context,game,mario);
         // super(context, game);
@@ -31,17 +32,23 @@ public class QuestionMark extends Obstacles{
 
 
         rectangle=new Rect(left,top,left+questionmark.getWidth(),top+30+questionmark.getHeight());
-        //if(left>0){
-            canvas.drawBitmap(questionmark,left,top,null);//}
-            //canvas.drawRect(rectangle,paint);
+
+        canvas.drawBitmap(questionmark,left,top,null);//}
         if(mario.MOVE>=canvas.getWidth()/2 && game.pressed && game.collideright()) {
            // if (left > 0) {
                 left = left - 20;
           //  }
         }
 
-        if(questiontype==1){
+        if(drawit==1){
+            coin.draw(canvas);
+            if(Rect.intersects(mario.rectangle,coin.rectangle)){
+            coin.collide();}
             //mushroom=new Mushroom(context,game,mario,left,top);
+
+
+        }
+        else if(drawit==2){
 
 
         }
@@ -56,12 +63,14 @@ public class QuestionMark extends Obstacles{
         numbercollide++;
         questionmark=BitmapFactory.decodeResource(context.getResources(),R.drawable.dottedblock);
         if(questiontype==1){
-          //  coin=new Coins(context,game,mario,left,top-50);
-//            game.levels.obstacles1.add(coin);
+            coin=new Coins(context,game,mario,left,top-150);
+            drawit=1;
+
+            //game.levels.obstacles1.add(coin);
 
         }
         else if(questiontype==2){
-           // mushroom=new Mushroom(context,game,mario,left,top);
+           mushroom=new Mushrooms(context,game,mario);
 
 
 

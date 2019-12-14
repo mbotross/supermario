@@ -25,17 +25,15 @@ public class Levels {
     int questiontype=1;
     int endlevel=1;
 
-    public int[] level1=new int [70];//1:block 2:questionmark 3:pipes 4:coins 5: endflag 6: platform
+    public int[] level1=new int [80];//1:block 2:questionmark 3:pipes 4:coins 5: endflag 6: platform
     public int[] level2=new int [20];
     public int[] level3=new int [20];
 
-    public Point[] level1coord=new Point[70];
-    public Point[] level2coord=new Point[20];
-    public Point[] level3coord=new Point[20];
+    public Point[] level1coord=new Point[80];
+
 
     public ArrayList<Obstacles> obstacles1=new ArrayList<Obstacles>();
-    public ArrayList<Obstacles> obstacles2=new ArrayList<Obstacles>();
-    public ArrayList<Obstacles> obstacles3=new ArrayList<Obstacles>();
+
 
    //Bitmap [][]level1=new Bitmap[32][8];
     //Bitmap [][]level2=new Bitmap[32][8];
@@ -245,10 +243,10 @@ public class Levels {
             }
             else if(level1[i]==2){
                 obstacles1.add(new QuestionMark(context,game,mario,level1coord[i].x,level1coord[i].y,questiontype));
-                questiontype++;
-                if(questiontype==3){
-                    questiontype=1;
-                }
+                //questiontype++;
+                //if(questiontype==3){
+                  //  questiontype=1;
+                //}
             }
 
 
@@ -319,7 +317,6 @@ public class Levels {
             for(int i=0;i<obstacles1.size();i++){
                 obstacles1.get(i).draw(canvas);
             }
-
         }
         else if(game.level==3){
             for(int i=0;i<obstacles1.size();i++){

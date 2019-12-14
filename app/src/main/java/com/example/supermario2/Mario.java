@@ -31,7 +31,7 @@ public class Mario {
     int gravity=10;
     Rect rectangle;
     int state;//1:right 2:left 3:Jump
-    int type;//1:normal, 2:Super 3:Invincible
+    int type;//1:normal, 2:Super
     int invincibility = 0;
     int count=0;
 
@@ -47,22 +47,19 @@ public class Mario {
         this.marioright[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondright);
         this.marioleft[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstmarioleft);
         this.marioleft[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondmarioleft);
-        //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdright);
-        //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthright);
-        //this.marioright[0]= BitmapFactory.decodeResource(context.getResources(),R.drawable.firstleft);
-        //this.marioright[1]= BitmapFactory.decodeResource(context.getResources(),R.drawable.secondleft);
-        //this.marioright[2]= BitmapFactory.decodeResource(context.getResources(),R.drawable.thirdleft);
-        //this.marioright[3]= BitmapFactory.decodeResource(context.getResources(),R.drawable.fourthleft);
+
         /* Super Mario */
         this.superright[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstright);
         this.superright[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondright);
         this.superleft[0]=BitmapFactory.decodeResource(context.getResources(),R.drawable.superfirstleft);
         this.superleft[1]=BitmapFactory.decodeResource(context.getResources(),R.drawable.supersecondleft);
+
         /* Invincible Mario */
         this.invinciblemarioright[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.firstmarioinvincibleright);
         this.invinciblemarioright[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.secondmarioinvincibleright);
         this.invinciblemarioleft[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.firstmarioinvincibleleft);
         this.invinciblemarioleft[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.secondmarioinvincibleleft);
+
         /* Invincible Super Mario */
         this.invinciblesupermarioright[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblefirstright);
         this.invinciblesupermarioright[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblesecondright);
@@ -70,36 +67,21 @@ public class Mario {
         this.invinciblesupermarioleft[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.superinvinciblesecondleft);
     }
 
-    public void initmario(){
+
+
+    public void marioupdate(){
+
+         if(game.mariomove==1 && game.pressed&&MOVE<game.WIDTH/2){
+           MOVE=MOVE+60;
+
+       }
+       else if(game.mariomove==2 && !game.pressed && MOVE>0 && game.collideleft()){
+           MOVE=MOVE-60;
+       }
 
     }
 
-    public void jump(){
 
-    }
-
-    public void moveright(int x, int y){
-
-        MOVE=x;
-        //check if they press right or left
-        //rotate between two bitmaps
-        //also check if there aren't any obstacles
-     /*   if(x>canvas.getWidth()/2) {
-            if (MOVE <= canvas.getWidth() / 2) {
-                MOVE = MOVE + 100;
-
-            }
-        }
-        else if(x<canvas.getWidth()/2){
-            if(MOVE>0){
-                MOVE=MOVE-100;
-            }
-        }*/
-
-        //while thing underneath mario is a block, move him
-        //if there is a empty space underneath him, game is over and mario dies
-
-    }
 
     public void collide(String position){
 
@@ -251,10 +233,7 @@ public class Mario {
                 }
 
             }
-            //rectangle=new Rect(MOVE, marioheight,MOVE+superright[0].getWidth(),marioheight+superright[0].getHeight());
-           // canvas.drawRect(rectangle,paint);
 
-            //canvas.drawBitmap(superright[var],MOVE,marioheight,null);
         }
 
         var++;
@@ -262,6 +241,14 @@ public class Mario {
             var=0;
         }
 
+
+
+
+
+
     }
+
+
+
 
 }

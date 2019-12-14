@@ -4,8 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Rect;
 
 import java.util.ArrayList;
@@ -42,10 +40,7 @@ public class Blocks extends Obstacles {
         if(numbercollide==0 && game.GameState==1){
         game.Points=game.Points+10;}
         numbercollide++;
-       // if (mario.rectangle.top == levels.obstacles1.get(i).rectangle.bottom){
-         //   System.out.println("COLLLIDE");
-           // return false;
-        //}
+
         if(mario.rectangle.top<=rectangle.bottom+10){
             breakit=1;
 
@@ -55,22 +50,7 @@ public class Blocks extends Obstacles {
         return true;
 
     }
-    public void draw1(Canvas canvas){
-        Paint paint=new Paint();
-        paint.setColor(Color.GREEN);
-        for(int i=0;i<blocksarr.size();i++){
-            rectangle=new Rect(left,top,left+Block.getWidth(),top+20+Block.getHeight());
-            canvas.drawBitmap(blocksarr.get(i),left,top,null);
-          //  canvas.drawRect(rectangle,paint);
-            left=left+Block.getWidth();
 
-
-
-        }
-        left=500;
-
-
-    }
     public void draw(Canvas canvas){
 
 
@@ -78,29 +58,23 @@ public class Blocks extends Obstacles {
         rectangle=new Rect(left,top,left+Block.getWidth(),top+30+Block.getHeight());
         if(breakit==0){
         canvas.drawBitmap(Block,left,top,null);
-        //canvas.drawRect(rectangle,paint);
         }
         else if(breakit==1){
            int index=  game.levels.obstacles1.indexOf(this);
-            System.out.println("THI index"+index);
             game.levels.obstacles1.remove(index);
 
         }
 
 
-        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed==true && game.collideright()) {
-          //  if (left > 0) {
+        if(mario.MOVE>=canvas.getWidth()/2 && game.pressed && game.collideright()) {
+
                 left = left - 20;
-           // }
+
         }
 
 
     }
-    public void draw3(Canvas canvas){
 
-
-
-    }
 
 
 }

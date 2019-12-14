@@ -634,7 +634,6 @@ drawable castle
 drawable coin
 drawable crushedgoomba
 drawable dottedblock
-drawable firstinvisibleright
 drawable firstleft
 drawable firstmarioinvincibleleft
 drawable firstmarioinvincibleright
@@ -678,6 +677,7 @@ drawable secondpipe
 drawable secondright
 drawable sky
 drawable star
+drawable startup
 drawable superfirstleft
 drawable superfirstright
 drawable superinvinciblefirstleft
@@ -763,6 +763,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -788,7 +789,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id right
-id right_button
 id right_icon
 id right_side
 id screen
@@ -821,7 +821,6 @@ id standard
 id start
 id submenuarrow
 id submit_area
-id supermario2
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -875,6 +874,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_game
 layout activity_main
 layout notification_action
 layout notification_action_tombstone
@@ -886,9 +886,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
-raw ibelieve
 raw supermusic
 string abc_action_bar_home_description
 string abc_action_bar_up_description
